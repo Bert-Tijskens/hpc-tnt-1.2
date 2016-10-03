@@ -1,0 +1,2 @@
+the files numpy_boost.hpp and numpy_boost_python are modified versions of the originals coming from michael droettboom
+https://github.com/mdboom/numpy-boost

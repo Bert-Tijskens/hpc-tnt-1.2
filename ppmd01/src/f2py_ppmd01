@@ -1,0 +1,6 @@
+#!/bin/bash
+
+module load Python/3.5.1-intel-2016a
+
+f2py -c md.f90 -m pymd_f2py -h
+

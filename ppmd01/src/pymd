@@ -1,0 +1,110 @@
+!    -*- f90 -*-
+! Note: the context of this file is case sensitive.
+
+module mymd ! in md.f90
+    integer, parameter,optional :: wp=kind(1.d0)
+    function lj_pot(r) ! in md.f90:mymd
+        real(kind=wp) intent(in) :: r
+        real(kind=wp) :: lj_pot
+    end function lj_pot
+    function lj_pot2(r2) ! in md.f90:mymd
+        real(kind=wp) intent(in) :: r2
+        real(kind=wp) :: lj_pot2
+    end function lj_pot2
+    function epot(n,rx,ry,rz) ! in md.f90:mymd
+        integer, optional,check(len(rx)>=n),depend(rx) :: n=len(rx)
+        real(kind=wp) dimension(n),intent(in) :: rx
+        real(kind=wp) dimension(n),intent(in),depend(n) :: ry
+        real(kind=wp) dimension(n),intent(in),depend(n) :: rz
+        real(kind=wp) :: epot
+    end function epot
+    function ekin(n,vx,vy,vz) ! in md.f90:mymd
+        integer, optional,check(len(vx)>=n),depend(vx) :: n=len(vx)
+        real(kind=wp) dimension(n),intent(in) :: vx
+        real(kind=wp) dimension(n),intent(in),depend(n) :: vy
+        real(kind=wp) dimension(n),intent(in),depend(n) :: vz
+        real(kind=wp) :: ekin
+    end function ekin
+    function lj_force_factor(r2) ! in md.f90:mymd
+        real(kind=wp) intent(in) :: r2
+        real(kind=wp) :: lj_force_factor
+    end function lj_force_factor
+    subroutine compute_accelerations(n,rx,ry,rz,ax,ay,az) ! in md.f90:mymd
+        integer, optional,check(len(rx)>=n),depend(rx) :: n=len(rx)
+        real(kind=wp) dimension(n),intent(in) :: rx
+        real(kind=wp) dimension(n),intent(in),depend(n) :: ry
+        real(kind=wp) dimension(n),intent(in),depend(n) :: rz
+        real(kind=wp) dimension(n),intent(inout),depend(n) :: ax
+        real(kind=wp) dimension(n),intent(inout),depend(n) :: ay
+        real(kind=wp) dimension(n),intent(inout),depend(n) :: az
+    end subroutine compute_accelerations
+    subroutine vv_update_positions(n,rx,ry,rz,vx,vy,vz,ax,ay,az,dt) ! in md.f90:mymd
+        integer, optional,intent(in),check(len(rx)>=n),depend(rx) :: n=len(rx)
+        real(kind=wp) dimension(n),intent(inout) :: rx
+        real(kind=wp) dimension(n),intent(inout),depend(n) :: ry
+        real(kind=wp) dimension(n),intent(inout),depend(n) :: rz
+        real(kind=wp) dimension(n),intent(inout),depend(n) :: vx
+        real(kind=wp) dimension(n),intent(inout),depend(n) :: vy
+        real(kind=wp) dimension(n),intent(inout),depend(n) :: vz
+        real(kind=wp) dimension(n),intent(in),depend(n) :: ax
+        real(kind=wp) dimension(n),intent(in),depend(n) :: ay
+        real(kind=wp) dimension(n),intent(in),depend(n) :: az
+        real(kind=wp) intent(in) :: dt
+    end subroutine vv_update_positions
+    subroutine vv_update_velocities(n,vx,vy,vz,ax,ay,az,dt) ! in md.f90:mymd
+        integer, optional,intent(in),check(len(vx)>=n),depend(vx) :: n=len(vx)
+        real(kind=wp) dimension(n),intent(inout) :: vx
+        real(kind=wp) dimension(n),intent(inout),depend(n) :: vy
+        real(kind=wp) dimension(n),intent(inout),depend(n) :: vz
+        real(kind=wp) dimension(n),intent(in),depend(n) :: ax
+        real(kind=wp) dimension(n),intent(in),depend(n) :: ay
+        real(kind=wp) dimension(n),intent(in),depend(n) :: az
+        real(kind=wp) intent(in) :: dt
+    end subroutine vv_update_velocities
+    function move0(n,rx,ry,rz,vx,vy,vz,ax,ay,az,dt,ntimesteps) ! in md.f90:mymd
+        integer, optional,intent(in),check(len(rx)>=n),depend(rx) :: n=len(rx)
+        real(kind=wp) dimension(n),intent(inout) :: rx
+        real(kind=wp) dimension(n),intent(inout),depend(n) :: ry
+        real(kind=wp) dimension(n),intent(inout),depend(n) :: rz
+        real(kind=wp) dimension(n),intent(inout),depend(n) :: vx
+        real(kind=wp) dimension(n),intent(inout),depend(n) :: vy
+        real(kind=wp) dimension(n),intent(inout),depend(n) :: vz
+        real(kind=wp) dimension(n),intent(inout),depend(n) :: ax
+        real(kind=wp) dimension(n),intent(inout),depend(n) :: ay
+        real(kind=wp) dimension(n),intent(inout),depend(n) :: az
+        real(kind=wp) intent(in) :: dt
+        integer intent(in) :: ntimesteps
+        real(kind=wp) :: move0
+    end function move0
+    subroutine vv_update_velocities_positions(n,rx,ry,rz,vx,vy,vz,ax,ay,az,dt) ! in md.f90:mymd
+        integer, optional,intent(in),check(len(rx)>=n),depend(rx) :: n=len(rx)
+        real(kind=wp) dimension(n),intent(inout) :: rx
+        real(kind=wp) dimension(n),intent(inout),depend(n) :: ry
+        real(kind=wp) dimension(n),intent(inout),depend(n) :: rz
+        real(kind=wp) dimension(n),intent(inout),depend(n) :: vx
+        real(kind=wp) dimension(n),intent(inout),depend(n) :: vy
+        real(kind=wp) dimension(n),intent(inout),depend(n) :: vz
+        real(kind=wp) dimension(n),intent(in),depend(n) :: ax
+        real(kind=wp) dimension(n),intent(in),depend(n) :: ay
+        real(kind=wp) dimension(n),intent(in),depend(n) :: az
+        real(kind=wp) intent(in) :: dt
+    end subroutine vv_update_velocities_positions
+    function move(n,rx,ry,rz,vx,vy,vz,ax,ay,az,dt,ntimesteps) ! in md.f90:mymd
+        integer, optional,intent(in),check(len(rx)>=n),depend(rx) :: n=len(rx)
+        real(kind=wp) dimension(n),intent(inout) :: rx
+        real(kind=wp) dimension(n),intent(inout),depend(n) :: ry
+        real(kind=wp) dimension(n),intent(inout),depend(n) :: rz
+        real(kind=wp) dimension(n),intent(inout),depend(n) :: vx
+        real(kind=wp) dimension(n),intent(inout),depend(n) :: vy
+        real(kind=wp) dimension(n),intent(inout),depend(n) :: vz
+        real(kind=wp) dimension(n),intent(inout),depend(n) :: ax
+        real(kind=wp) dimension(n),intent(inout),depend(n) :: ay
+        real(kind=wp) dimension(n),intent(inout),depend(n) :: az
+        real(kind=wp) intent(in) :: dt
+        integer intent(in) :: ntimesteps
+        real(kind=wp) :: move
+    end function move
+end module mymd
+
+! This file was auto-generated with f2py (version:2).
+! See http://cens.ioc.ee/projects/f2py2e/
