@@ -1,0 +1,11 @@
+on my mac
+                   vcMD               bsMD
+                     µs         i/s     µs         i/s
+ljpot2 float  0   73442 1.36162e+09  74724 1.33826e+09
+ljpot2 double 1  226707 4.41098e+08 231748 4.31503e+08
+ epot  float  2   85059 1.17565e+09  86881 1.151  e+09
+ epot  double 3  242909 4.11677e+08 249761 4.00383e+08
+
+
+
+

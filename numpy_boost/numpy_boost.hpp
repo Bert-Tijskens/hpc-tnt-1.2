@@ -51,7 +51,10 @@ namespace detail {
  // The generic form throws
     template<typename T>
     int numpy_type_map() {
-        throw std::runtime_error("numpy_type_map(): Illegal conversion requested");
+        throw std::runtime_error
+        ( std::string("numpy_type_map(): Illegal conversion requested: T=")
+              .append(typeid(T).name())
+        );
     }
   
  // specializations are functional:
@@ -71,6 +74,8 @@ namespace detail {
     template<> inline int numpy_type_map<boost::uint32_t>()            { return NPY_UINT32; }
     template<> inline int numpy_type_map<boost::int64_t>()             { return NPY_INT64; }
     template<> inline int numpy_type_map<boost::uint64_t>()            { return NPY_UINT64; }
+ // line below necessary for python27/icpc on hopper
+//     template<> inline int numpy_type_map<long long int >()             { return NPY_INT64; }
 }// namespace detail
 
 class python_exception : public std::exception {};
@@ -173,7 +178,7 @@ public:
         init_from_array(other.array);
     }
 
-  // Construct a new array based on the given dimensions
+ // Construct a new array based on the given dimensions
     template<class ExtentsList>
     explicit numpy_boost(const ExtentsList& extents)
       : super(NULL, std::vector<typename super::index>(NDims, 0))
@@ -191,6 +196,12 @@ public:
         
         init_from_array(a);
     }
+
+ // To construct a new array based on the given dimensions and in self allocated
+ // memory, you can use PyArray_SimpleNewFromData. THis is usefull for assuring
+ // correct alignment, and for  For first touch initialization of openmp arrays.
+ // see numpy-ref.pdf Section 5.4. ArrayAPI, p. 1391
+ //
 
  // Destructor
     ~numpy_boost() {

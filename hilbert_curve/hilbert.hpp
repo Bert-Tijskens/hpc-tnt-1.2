@@ -17,8 +17,11 @@
 
 #define DIMS 3
 #define BITS 7
+ // 7 is the largest value for which the library works
  // i,j,k can vary between 0 and 2**BITS - 1
  // h can vary between 0 and (2**BITS)**3 - 1
+
+//#define VALIDATE
 #ifdef VALIDATE
  // Check validity of cell and hilbert indices on input
     #define VALIDATE_IJK(i) validate_cell_index(i);
@@ -36,11 +39,11 @@ namespace hilbert
      // corresponds to size_t.
     static const int MAXIJK = (1 << BITS);
     static const int MAXH   = (1 << (BITS*3));
-    void validate_cell_index(int const i);
     inline bool is_valid_ijk(int const* ijk) {
         return ijk[0]<MAXIJK &&    ijk[1]<MAXIJK &&    ijk[2]<MAXIJK
          && 0<=ijk[0]        && 0<=ijk[1]        && 0<=ijk[2];
     }
+    void validate_cell_index(int const i);
     inline bool is_valid_i(int const i) { return 0<=i && i<MAXIJK; }
     inline bool is_valid_h(int const h) { return 0<=h && h<MAXH; }
 
@@ -62,13 +65,14 @@ namespace hilbert
     }
  //-------------------------------------------------------------------------------------------------
  // Hilbert index to 3D cell index
-    void h2ijk( const long long int h
-              , int* ijk // array
-                         // Beware: ijk is modified!!! DO NOT use if you want to keep the values of i,j,k
+    void h2ijk( const long long int h   // in
+              , int* ijk // array       // out
               );
+
  //-------------------------------------------------------------------------------------------------
  // 3D cell index to Hilbert index
- 	HilbertIndex_t ijk2h( int* ijk ); // ijk is array
+    HilbertIndex_t ijk2h( int      * ijk ); // ijk array will be modified!
+    HilbertIndex_t ijk2h( int const* ijk ); // ijk array will not be modified!
 
  	inline HilbertIndex_t
  	ijk2h( int const i, int const j, int const k )

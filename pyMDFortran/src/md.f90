@@ -68,13 +68,62 @@ contains
         lj_force_factor2 = 48.0d0*ri2*ri6*(ri6-0.5d0);
     end function
 
+    function ppmd01ff(n,rx,ry,rz,ax,ay,az,n_used,n_iter)
+      ! Compute all interactions between atom 1 and atoms 2:n and update the acceleations.
+      ! (This is the force equivalent of the ppmd01 benchmark)
+      ! Repeat n_iter times (for accurate timing results)
+      ! Return the cputime
+        integer, parameter :: wp = kind(1.d0) ! double precision identifier
+        integer                ,intent(in)    :: n        ! # atoms
+        real(wp),dimension(n)  ,intent(in)    :: rx,ry,rz ! positions
+        real(wp),dimension(n)  ,intent(inout) :: ax,ay,az ! accelerations
+        integer                ,intent(in)    :: n_iter
+        integer                ,intent(in)    :: n_used
+
+        real :: ppmd01ff  ! the cpu time consumed by the subprogram
+
+        real(wp)  :: aij,dx,dy,dz,xi,yi,zi
+        real :: cpustart,cpustop
+        integer :: ja,iter
+
+        call cpu_time(cpustart)
+        do iter=1,n_iter
+            xi = rx(1)
+            yi = ry(1)
+            zi = rz(1)
+            !DIR$ SIMD
+            do ja=2,n_used
+                dx = rx(ja)-xi
+                dy = ry(ja)-yi
+                dz = rz(ja)-zi
+                aij = lj_force_factor2( dx**2 + dy**2 + dz**2 )
+              ! update particle i acceleration
+                ax(1) = ax(1) + aij*dx
+                ay(1) = ay(1) + aij*dy
+                az(1) = az(1) + aij*dz
+              ! update particle j acceleration
+                ax(ja) = ax(ja) - aij*dx
+                ay(ja) = ay(ja) - aij*dy
+                az(ja) = az(ja) - aij*dz
+              ! print *,ia,ja,ax(ia),ay(ia),az(ia),ax(ja),ay(ja),az(ja)
+            enddo
+        enddo
+        call cpu_time(cpustop)
+        ppmd01ff = cpustop-cpustart
+
+    end function
+!-------------------------------------------------------------------------------
+!   Verlet list traversal subprograms
+
     subroutine print_verlet_list(n,verlet_list,m)
       ! print the verlet list entries one per row
+      ! (for testing purposes)
         integer                ,intent(in)    :: n,m
         integer ,dimension(m,n),intent(in)    :: verlet_list
 
-        integer :: ia,j,ja,ni
+        integer :: ia,j,ni
 
+        print *,'md.f90: print_verlet_list( verlet_linear(m=',m,',n_atoms=',n,') )'
         do ia=1,n
             ni = verlet_list(1,ia)
             do j = 2,ni+1
@@ -119,9 +168,10 @@ contains
         real(wp),dimension(n)  ,intent(inout) :: ax,ay,az ! accelerations
         integer ,dimension(m,n),intent(in)    :: verlet_list
 
-        real(wp)  :: aij,dx,dy,dz
-        integer :: ia,j,ja,ni
+        real(wp) :: aij
+        integer  :: ia,j,ja,ni
 
+        print *,'md.f90: test_interactions_verlet(rx(n),ry(n),rz(n),ax(n),ay(n),az(n),verlet_list(n,m)): n=',n,', m=',m
         do ia=1,n
             ni = verlet_list(1,ia)
             do j = 2,ni+1
@@ -144,6 +194,8 @@ contains
       ! Computes the lennard-jones forces between all atom pairs in the verlet list and update
       ! the accelerations.
       ! It is assumed that the accelerations are appropriately initialized (typically by zeros).
+      ! Repeat niter times (for accurate timing results)
+      ! Return the cputime
         integer, parameter :: wp = kind(1.d0) ! double precision identifier
         integer                ,intent(in)    :: n,m
         real(wp),dimension(n)  ,intent(in)    :: rx,ry,rz ! positions
@@ -185,5 +237,168 @@ contains
 !        print *,cpustart,cpustop,cpustop-cpustart
     end function
 
+!------------------------------------------------------------------------------
+!   The same subprograms for linear verlet list
+!   The linear verlet list is a data structure for storing verlet lists in a 1D
+!   Array.
+!       [n_pairs_i1 j1_i1 j2_i1 .. n_pairs_i2 j1_i2 j2_i2 .. i3 ..]
+!   This data structure allows contiguous data access during traversal.
+
+    subroutine print_verlet_linear(n_atoms,verlet_linear,m)
+      ! print the verlet list entries one per row
+      ! (for testing purposes)
+        integer              ,intent(in) :: n_atoms,m
+        integer ,dimension(m),intent(in) :: verlet_linear
+
+        integer :: ia,j,ia_pairs,k
+
+        print *,'md.f90: print_verlet_linear( n_atoms=',n_atoms,', verlet_linear(m=',m,') )'
+        j=1
+        do ia=1,n_atoms
+            ia_pairs = verlet_linear(j)
+            do k = j+1,j+ia_pairs
+                print *,ia,verlet_linear(k)+1 ! +1 since fortran starts counting from 1 !
+            enddo
+            j = j + 1 + ia_pairs
+        enddo
+    end subroutine
+
+    subroutine test_interactions_verlet_linear(n_atoms,rx,ry,rz,ax,ay,az,verlet_linear,m)
+      ! A test_interactions_verlet but for a linear verlet list data structure
+
+        integer, parameter :: wp = kind(1.d0) ! double precision identifier
+        integer                    ,intent(in)    :: n_atoms,m
+        real(wp),dimension(n_atoms),intent(in)    :: rx,ry,rz ! positions
+        real(wp),dimension(n_atoms),intent(inout) :: ax,ay,az ! accelerations
+        integer ,dimension(m)      ,intent(in)    :: verlet_linear
+
+        real(wp)  :: aij
+        integer :: ia,j,ja,k,ia_pairs
+
+        print *,'md.f90: test_interactions_verlet_linear(rx(n),ry(n),rz(n),ax(n),ay(n),az(n),verlet_linear(m)): n=',n_atoms,', m=',m
+        j=1
+        do ia=1,n_atoms
+            ia_pairs = verlet_linear(j)
+            do k = j+1,j+ia_pairs
+                ja = verlet_linear(k)+1 ! +1 since fortran starts counting from 1 !
+                aij = 1
+              ! update particle i acceleration
+                ax(ia) = ax(ia) + aij
+                ay(ia) = ay(ia) + aij
+                az(ia) = az(ia) + aij
+              ! update particle j acceleration
+              ! ax(ja) = ax(ja)
+                ay(ja) = ay(ja) + aij
+                az(ja) = az(ja) - aij
+              ! print *,ia,ja,ax(ia),ay(ia),az(ia),ax(ja),ay(ja),az(ja)
+            enddo
+            j = j + 1 + ia_pairs
+        enddo
+    end subroutine
+
+    function compute_interactions_verlet_linear(n_atoms,rx,ry,rz,ax,ay,az,verlet_linear,m,n_iter)
+      ! Computes the lennard-jones forces between all atom pairs in the linear verlet list and update
+      ! the accelerations.
+      ! It is assumed that the accelerations are appropriately initialized (typically by zeros).
+      ! Repeat n_iter times (for accurate timing results)
+      ! Return the cputime
+        integer, parameter :: wp = kind(1.d0) ! double precision identifier
+        integer                    ,intent(in)    :: n_atoms,m
+        real(wp),dimension(n_atoms),intent(in)    :: rx,ry,rz ! positions
+        real(wp),dimension(n_atoms),intent(inout) :: ax,ay,az ! accelerations
+        integer ,dimension(m)      ,intent(in)    :: verlet_linear
+        integer                    ,intent(in)    :: n_iter   ! number of iterations, usually 1, >1 to get meaningfull results for cputime measurement
+
+        real :: compute_interactions_verlet_linear  ! the cpu time consumed by this subprogram
+
+        real(wp)  :: aij,dx,dy,dz
+        real :: cpustart,cpustop
+        integer :: iter,ia,ja,ia_pairs,j,k
+
+        call cpu_time(cpustart)
+        do iter=1,n_iter
+        j=1 ! 0+1 since fortran starts counting from 1 !
+        do ia=1,n_atoms
+            ia_pairs = verlet_linear(j)
+            !DIR$ SIMD
+            do k = j+1,j+ia_pairs
+                ja = verlet_linear(k)+1 ! +1 since fortran starts counting from 1 !
+                dx = rx(ja)-rx(ia)
+                dy = ry(ja)-ry(ia)
+                dz = rz(ja)-rz(ia)
+                aij = lj_force_factor2( dx**2 + dy**2 + dz**2 )
+              ! update particle ia acceleration
+                ax(ia) = ax(ia) + aij*dx
+                ay(ia) = ay(ia) + aij*dy
+                az(ia) = az(ia) + aij*dz
+              ! update particle ja acceleration
+                ax(ja) = ax(ja) - aij*dx
+                ay(ja) = ay(ja) - aij*dy
+                az(ja) = az(ja) - aij*dz
+!                print *,ia,ja,ax(ia),ay(ia),az(ia),ax(ja),ay(ja),az(ja)
+            enddo
+            j = j + 1 + ia_pairs
+        enddo
+        enddo
+        call cpu_time(cpustop)
+        compute_interactions_verlet_linear = cpustop-cpustart
+!        print *,cpustart,cpustop,cpustop-cpustart
+    end function
+
+!   untested so far...
+    function compute_interactions_verlet_linear2(n_atoms,rx,ry,rz,ax,ay,az,verlet_n,verlet_pairs,m,n_iter)
+      ! Computes the lennard-jones forces between all atom pairs in the linear verlet list and update
+      ! the accelerations.
+      ! In this version we have two arrays for the linear verlet list:
+      !   . verlet_n(n_atoms) containing the number of verlet pairs for each atom,
+      !   . verlet_pairs(m) containing all the pairs, starting with verlet_n(1) pairs with atom 1,
+      !     followed by, verlet_n(2) pairs with atom 2 and so on.
+      !
+      ! It is assumed that the accelerations are appropriately initialized (typically by zeros).
+      ! Repeat n_iter times (for accurate timing results)
+      ! Return the cputime
+        integer, parameter :: wp = kind(1.d0) ! double precision identifier
+        integer                    ,intent(in)    :: n_atoms,m
+        real(wp),dimension(n_atoms),intent(in)    :: rx,ry,rz ! positions
+        real(wp),dimension(n_atoms),intent(inout) :: ax,ay,az ! accelerations
+        integer ,dimension(n_atoms),intent(in)    :: verlet_n
+        integer ,dimension(m)      ,intent(in)    :: verlet_pairs
+        integer                    ,intent(in)    :: n_iter   ! number of iterations, usually 1, >1 to get meaningfull results for cputime measurement
+
+        real :: compute_interactions_verlet_linear2  ! the cpu time consumed by this subprogram
+
+        real(wp)  :: aij,dx,dy,dz
+        real :: cpustart,cpustop
+        integer :: iter,ia,ja,ia_pairs,j,k
+
+        call cpu_time(cpustart)
+        do iter=1,n_iter
+        j=1 ! 0+1 since fortran starts counting from 1 !
+        do ia=1,n_atoms
+            ia_pairs = verlet_n(ia)
+            !DIR$ SIMD
+            do k = j,j+ia_pairs
+                ja = verlet_pairs(k)+1 ! +1 since fortran starts counting from 1 !
+                dx = rx(ja)-rx(ia)
+                dy = ry(ja)-ry(ia)
+                dz = rz(ja)-rz(ia)
+                aij = lj_force_factor2( dx**2 + dy**2 + dz**2 )
+              ! update particle ia acceleration
+                ax(ia) = ax(ia) + aij*dx
+                ay(ia) = ay(ia) + aij*dy
+                az(ia) = az(ia) + aij*dz
+              ! update particle ja acceleration
+                ax(ja) = ax(ja) - aij*dx
+                ay(ja) = ay(ja) - aij*dy
+                az(ja) = az(ja) - aij*dz
+!                print *,ia,ja,ax(ia),ay(ia),az(ia),ax(ja),ay(ja),az(ja)
+            enddo
+            j = j + 1 + ia_pairs
+        enddo
+        enddo
+        call cpu_time(cpustop)
+        compute_interactions_verlet_linear2 = cpustop-cpustart
+!        print *,cpustart,cpustop,cpustop-cpustart
+    end function
 
 end module

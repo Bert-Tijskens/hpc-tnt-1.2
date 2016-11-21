@@ -1,0 +1,137 @@
+//===============================================================================
+// Copyright (C) 2011 by Huy T. Vo, Polytechnic Institute Of New York University 
+// Contact email: hvo@poly.edu   -  URL: http://vgc.poly.edu/projects/meshlayout
+// This code is for educational purpose only. No guarantees that it's useful for 
+// any other purpose. This code is part of the space-filling curve mesh layout.  
+//===============================================================================
+#include <stdio.h>
+#include <string.h>
+#include "octcode.h"
+#include "sort.h"
+#define MIN3(a,b,c) (a<b)?((a<c)?a:c):((b<c)?b:c)
+#define USE_HILBERT 0
+
+int main(int argc, char **argv)
+{
+  // Test arguments
+  if (argc<3) {
+    fprintf(stderr, "Usage: ./sfc input.ply output.ply\n");
+    return 0;
+  }
+
+  // Read input PLY
+  char buf[1024];
+  int nVert, nFace;
+  FILE *fi = fopen(argv[1], "rb");
+  bool end = false;
+  while (!end) {
+    fgets(buf, sizeof(buf), fi);
+    if (strstr(buf, "end_header")==buf)
+      end = true;
+    else if (strstr(buf, "element vertex")==buf)
+      sscanf(buf + strlen("element vertex"), "%d", &nVert);
+    else if (strstr(buf, "element face")==buf)
+      sscanf(buf + strlen("element face"), "%d", &nFace);
+  }
+
+  // Read vertices and compute the bounding box
+  fprintf(stderr, "Read %d vertices and compute the bounding box...", nVert);
+  float bbMin[3] = { 1e36, 1e36, 1e36};
+  float bbMax[3] = {-1e36,-1e36,-1e36};
+  float *vertices = (float*)malloc(sizeof(float)*3*nVert);
+  fread(vertices, sizeof(float)*3, nVert, fi);
+  for (int i=0; i<nVert; i++) {
+    for (int j=0; j<3; j++) {
+      if (vertices[i*3+j]<bbMin[j]) bbMin[j] = vertices[i*3+j];
+      if (vertices[i*3+j]>bbMax[j]) bbMax[j] = vertices[i*3+j];
+    }    
+  }
+  fprintf(stderr, " [done]\n");
+
+  // Compute octree codes for vertices
+  fprintf(stderr, "Compute octree code for vertices...");
+  OctCode oc(bbMin, bbMax);
+  OCTCODE *vCode = (OCTCODE*)malloc(sizeof(OCTCODE)*nVert);
+  for (int i=0; i<nVert; i++) {
+#if USE_HILBERT
+    vCode[i] = oc.hilbert(vertices+i*3);
+#else    
+    vCode[i] = oc.zOrder(vertices+i*3);
+#endif
+  }
+  fprintf(stderr, " [done]\n");
+  
+  // Read in the faces and compute their octree codes
+  fprintf(stderr, "Read %d faces and compute their octree codes...", nFace);
+  int *indices = (int*)malloc(sizeof(int)*3*nFace);
+  OctNode *faces = (OctNode*)malloc(sizeof(OctNode)*nFace);
+  for (int i=0; i<nFace; i++) {
+    unsigned char cnt;
+    fread(&cnt, sizeof(cnt), 1, fi);
+    fread(indices+i*3, sizeof(int), 3, fi);
+    faces[i].code = MIN3(vCode[indices[i*3]], vCode[indices[i*3+1]], vCode[indices[i*3+2]]);
+    faces[i].index = i;
+  }
+  fprintf(stderr, " [done]\n");
+
+  // Sort the faces based on oct codes
+  fprintf(stderr, "Sort faces...");
+  inplaceRadixSort(faces, nFace);
+  fprintf(stderr, " [done]\n");
+
+  // Prepare output PLY
+  FILE *fo = fopen(argv[2], "wb");
+  fprintf(fo, "ply\n");
+  fprintf(fo, "format binary_little_endian 1.0\n");
+  fprintf(fo, "element vertex %d\n", nVert);
+  fprintf(fo, "property float x\n");
+  fprintf(fo, "property float y\n");
+  fprintf(fo, "property float z\n");
+  fprintf(fo, "element face %d\n", nFace);
+  fprintf(fo, "property list uchar int vertex_indices\n");
+  fprintf(fo, "end_header\n");
+
+  // Re-order and write vertices
+  fprintf(stderr, "Re-order and write vertices...");
+  int vCount = 0;
+  int *vOrder = (int*)vCode; // reuse vCode
+  int *newFaces = (int*)faces; // reuse faces
+  memset(vOrder, 0xFF, sizeof(int)*nVert); // set to -1
+  for (int i=0; i<nFace; i++) {
+    int oldFace[3];
+    memcpy(oldFace, indices+faces[i].index*3, sizeof(int)*3);
+    for (int j=0; j<3; j++) {
+      if (vOrder[oldFace[j]]==-1) {
+        vOrder[oldFace[j]] = vCount++;
+        fwrite(vertices+oldFace[j]*3, sizeof(float), 3, fo);
+      }
+      newFaces[i*3+j] = vOrder[oldFace[j]];
+    }
+  }
+  fprintf(stderr, " [done]\n");
+
+  // Check to see if there is unused vertices and output them
+  if (vCount<nVert) {
+    fprintf(stderr, "WARNING: found %d unused vertice(s)!\n", nVert-vCount);
+    for (int i=0; i<nVert; i++)
+      if (vOrder[i]==-1)
+        fwrite(vertices+i*3, sizeof(float), 3, fo);
+  }
+    
+  // Write faces
+  fprintf(stderr, "Write faces...");
+  for (int i=0; i<nFace; i++) {
+    unsigned char cnt = 3;
+    fwrite(&cnt, sizeof(cnt), 1, fo);
+    fwrite(newFaces+i*3, sizeof(int), 3, fo);
+  }
+  fprintf(stderr, " [done]\n");
+
+  // Close output file and free resources
+  fclose(fo);
+  free(vCode);
+  free(faces);
+  free(vertices);
+  free(indices);
+  return 0;
+}

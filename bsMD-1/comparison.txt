@@ -1,0 +1,19 @@
+on my mac
+                   vcMD               bsMD
+                     µs         i/s     µs         i/s
+ljpot2 float  0   73442  1362 1e+06  74724  1336 1e+06
+ljpot2 double 1  226707   441 1e+06 231748   432 1e+06
+ epot  float  2   85059  1176 1e+06  86881  1151 1e+06
+ epot  double 3  242909   412 1e+06 249761   400 1e+06
+
+on hopper login-node
+vc
+ljpot2 float  0   61563  1624 1e+06   73899 1353 1e+06
+ljpot2 double 1  198716   503 1e+06  201495  496 1e+06
+ epot  float  2   68895  1451 1e+06   73782 1355 1e+06
+ epot  double 3  209701   477 1e+06  210842  474 1e+06
+
+CONCLUSIONS
+. Vc performs slightly better than boost.simd
+. the baseline is lower than for autovectorization of the fortran code
+    477/450 = 1.06 = 6% more performance with Vc than with boost.simd  

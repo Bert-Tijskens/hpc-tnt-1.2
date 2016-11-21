@@ -8,6 +8,7 @@
 #include "hilbert.hpp"
 #include "hilbert_c.hpp"
 #include <stdexcept>
+#include <string>
 
 #define DEBUG_IO
 #ifdef DEBUG_IO
@@ -64,6 +65,12 @@ namespace hilbert
         }
     }
  //-------------------------------------------------------------------------------------------------
+    HilbertIndex_t
+    ijk2h( int const* ijk )
+    {
+        int ijk_copy[3] = { ijk[0], ijk[0], ijk[0] };
+        return ijk2h(ijk_copy);
+    }
  //-------------------------------------------------------------------------------------------------
     HilbertIndex_t
     ijk2h( int* ijk ) // Beware: ijk is modified!!!

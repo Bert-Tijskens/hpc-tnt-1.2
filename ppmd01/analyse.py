@@ -35,7 +35,7 @@ plt.plot( [L1,L1],[0,25],'-',[L2,L2],[0,25],'-',[L3,L3],[0,25],'-'
         )
 plt.legend(['L1','L2','L3', "contiguous SoA",'contiguous AoS','random access','random -xHost'],loc='upper left')
 if x_memory_used:
-    plt.xlabel('log10(mem used [kB])')
+    plt.xlabel('log2(mem used [kB])')
 else:
     plt.xlabel('log10(array length)')
 plt.ylabel('cpu time [s]')

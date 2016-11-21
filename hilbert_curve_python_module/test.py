@@ -36,16 +36,22 @@ if __name__=="__main__":
     
     for i in range(n):
         for j in range(n):
+            print(i,j,'*')
             for k in range(n):
+                print(ijk)
                 #compute h
-                h = hilbert.ijk2h_1(i,j,k)
+                ijk[0] = i
+                ijk[1] = j
+                ijk[2] = k
+                h = hilbert.ijk2h_1(ijk)
                 if not hilbert.is_validating():
                     assert h<n3
                 assert hh[h]==-1
                 hh[h]=h
-                #and from h back to ijk
+                print(h)#and from h back to ijk
                 ijk.fill(-1) 
                 hilbert.h2ijk_1(h,ijk)
+                print(ijk,'\n')
                 if not hilbert.is_validating():
                     assert i==ijk[0]
                     assert j==ijk[1]
