@@ -12,20 +12,20 @@ experiment.py ...
 |  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493 ... 
 |  |  |  |  ParticleContainer.build_verlet_list - spatial sort ... 
 |  |  |  |  |  Spatial sort skipped on request.
-|  |  |  |  ParticleContainer.build_verlet_list - spatial sort: completed in 0.000263 s.
-|  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 7.3e-05 s.
+|  |  |  |  ParticleContainer.build_verlet_list - spatial sort: completed in 0.000211 s.
+|  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 5.39e-05 s.
 |  |  |  |  ParticleContainer.build_verlet_list - building verlet list ... 
 |  |  |  |  |  (executing C++ version)
-|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 0.00138 s.
-|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 0.00195 s.
-|  |  build_verlet_list(atoms=108, case=0): completed in 0.00201 s.
+|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 0.00113 s.
+|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 0.00163 s.
+|  |  build_verlet_list(atoms=108, case=0): completed in 0.00166 s.
 |  |  ParticleContainer.compute_interactions - computing interactions ...
-|  |  1 x ParticleContainer.compute_interactions_verlet done in 32.0s
+|  |  1 x ParticleContainer.compute_interactions_verlet done in 31.0s
 |  |  memory used   : 17.46875 kB
-|  |  total cputime : 32.0 s
-|  |  cputime/iter  : 32.0 s
-|  |  interactions/s: 95.875
-|  experiment: nb=3, mem=5.06 kB, case=0: completed in 0.00605 s.
+|  |  total cputime : 31.0 s
+|  |  cputime/iter  : 31.0 s
+|  |  interactions/s: 98.9677419355
+|  experiment: nb=3, mem=5.06 kB, case=0: completed in 0.156 s.
 |  
 |  experiment: nb=4, mem=12 kB, case=0 ... 
 |  |      nb = 4
@@ -39,20 +39,20 @@ experiment.py ...
 |  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493 ... 
 |  |  |  |  ParticleContainer.build_verlet_list - spatial sort ... 
 |  |  |  |  |  Spatial sort skipped on request.
-|  |  |  |  ParticleContainer.build_verlet_list - spatial sort: completed in 6.89e-05 s.
-|  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 9.3e-05 s.
+|  |  |  |  ParticleContainer.build_verlet_list - spatial sort: completed in 9.3e-05 s.
+|  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 9.01e-05 s.
 |  |  |  |  ParticleContainer.build_verlet_list - building verlet list ... 
 |  |  |  |  |  (executing C++ version)
-|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 0.00278 s.
-|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 0.00303 s.
-|  |  build_verlet_list(atoms=256, case=0): completed in 0.00306 s.
+|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 0.00234 s.
+|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 0.00264 s.
+|  |  build_verlet_list(atoms=256, case=0): completed in 0.00267 s.
 |  |  ParticleContainer.compute_interactions - computing interactions ...
-|  |  1 x ParticleContainer.compute_interactions_verlet done in 99.0s
+|  |  1 x ParticleContainer.compute_interactions_verlet done in 98.0s
 |  |  memory used   : 50.125 kB
-|  |  total cputime : 99.0 s
-|  |  cputime/iter  : 99.0 s
-|  |  interactions/s: 96.0
-|  experiment: nb=4, mem=12 kB, case=0: completed in 0.0087 s.
+|  |  total cputime : 98.0 s
+|  |  cputime/iter  : 98.0 s
+|  |  interactions/s: 96.9795918367
+|  experiment: nb=4, mem=12 kB, case=0: completed in 0.00752 s.
 |  
 |  experiment: nb=5, mem=23.4 kB, case=0 ... 
 |  |      nb = 5
@@ -66,20 +66,20 @@ experiment.py ...
 |  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493 ... 
 |  |  |  |  ParticleContainer.build_verlet_list - spatial sort ... 
 |  |  |  |  |  Spatial sort skipped on request.
-|  |  |  |  ParticleContainer.build_verlet_list - spatial sort: completed in 0.000118 s.
-|  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 0.000176 s.
+|  |  |  |  ParticleContainer.build_verlet_list - spatial sort: completed in 9.58e-05 s.
+|  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 0.000161 s.
 |  |  |  |  ParticleContainer.build_verlet_list - building verlet list ... 
 |  |  |  |  |  (executing C++ version)
-|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 0.00546 s.
-|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 0.00583 s.
-|  |  build_verlet_list(atoms=500, case=0): completed in 0.00586 s.
+|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 0.00468 s.
+|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 0.00501 s.
+|  |  build_verlet_list(atoms=500, case=0): completed in 0.00504 s.
 |  |  ParticleContainer.compute_interactions - computing interactions ...
-|  |  1 x ParticleContainer.compute_interactions_verlet done in 204.0s
+|  |  1 x ParticleContainer.compute_interactions_verlet done in 229.0s
 |  |  memory used   : 113.3203125 kB
-|  |  total cputime : 204.0 s
-|  |  cputime/iter  : 204.0 s
-|  |  interactions/s: 110.343137255
-|  experiment: nb=5, mem=23.4 kB, case=0: completed in 0.0153 s.
+|  |  total cputime : 229.0 s
+|  |  cputime/iter  : 229.0 s
+|  |  interactions/s: 98.2969432314
+|  experiment: nb=5, mem=23.4 kB, case=0: completed in 0.014 s.
 |  
 |  experiment: nb=6, mem=40.5 kB, case=0 ... 
 |  |      nb = 6
@@ -94,19 +94,19 @@ experiment.py ...
 |  |  |  |  ParticleContainer.build_verlet_list - spatial sort ... 
 |  |  |  |  |  Spatial sort skipped on request.
 |  |  |  |  ParticleContainer.build_verlet_list - spatial sort: completed in 0.000106 s.
-|  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 0.000248 s.
+|  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 0.000237 s.
 |  |  |  |  ParticleContainer.build_verlet_list - building verlet list ... 
 |  |  |  |  |  (executing C++ version)
-|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 0.00815 s.
-|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 0.00858 s.
-|  |  build_verlet_list(atoms=864, case=0): completed in 0.0086 s.
+|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 0.00802 s.
+|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 0.00844 s.
+|  |  build_verlet_list(atoms=864, case=0): completed in 0.00846 s.
 |  |  ParticleContainer.compute_interactions - computing interactions ...
-|  |  1 x ParticleContainer.compute_interactions_verlet done in 379.0s
+|  |  1 x ParticleContainer.compute_interactions_verlet done in 385.0s
 |  |  memory used   : 211.875 kB
-|  |  total cputime : 379.0 s
-|  |  cputime/iter  : 379.0 s
-|  |  interactions/s: 113.477572559
-|  experiment: nb=6, mem=40.5 kB, case=0: completed in 0.0242 s.
+|  |  total cputime : 385.0 s
+|  |  cputime/iter  : 385.0 s
+|  |  interactions/s: 111.709090909
+|  experiment: nb=6, mem=40.5 kB, case=0: completed in 0.0237 s.
 |  
 |  experiment: nb=7, mem=64.3 kB, case=0 ... 
 |  |      nb = 7
@@ -120,20 +120,20 @@ experiment.py ...
 |  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493 ... 
 |  |  |  |  ParticleContainer.build_verlet_list - spatial sort ... 
 |  |  |  |  |  Spatial sort skipped on request.
-|  |  |  |  ParticleContainer.build_verlet_list - spatial sort: completed in 0.000153 s.
-|  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 0.0004 s.
+|  |  |  |  ParticleContainer.build_verlet_list - spatial sort: completed in 0.000192 s.
+|  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 0.000387 s.
 |  |  |  |  ParticleContainer.build_verlet_list - building verlet list ... 
 |  |  |  |  |  (executing C++ version)
-|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 0.0131 s.
-|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 0.0137 s.
-|  |  build_verlet_list(atoms=1372, case=0): completed in 0.0137 s.
+|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 0.0128 s.
+|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 0.0134 s.
+|  |  build_verlet_list(atoms=1372, case=0): completed in 0.0135 s.
 |  |  ParticleContainer.compute_interactions - computing interactions ...
-|  |  1 x ParticleContainer.compute_interactions_verlet done in 625.0s
+|  |  1 x ParticleContainer.compute_interactions_verlet done in 715.0s
 |  |  memory used   : 358.9375 kB
-|  |  total cputime : 625.0 s
-|  |  cputime/iter  : 625.0 s
-|  |  interactions/s: 118.4832
-|  experiment: nb=7, mem=64.3 kB, case=0: completed in 0.0382 s.
+|  |  total cputime : 715.0 s
+|  |  cputime/iter  : 715.0 s
+|  |  interactions/s: 103.569230769
+|  experiment: nb=7, mem=64.3 kB, case=0: completed in 0.0375 s.
 |  
 |  experiment: nb=8, mem=96 kB, case=0 ... 
 |  |      nb = 8
@@ -147,20 +147,20 @@ experiment.py ...
 |  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493 ... 
 |  |  |  |  ParticleContainer.build_verlet_list - spatial sort ... 
 |  |  |  |  |  Spatial sort skipped on request.
-|  |  |  |  ParticleContainer.build_verlet_list - spatial sort: completed in 0.000234 s.
-|  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 0.000503 s.
+|  |  |  |  ParticleContainer.build_verlet_list - spatial sort: completed in 0.000207 s.
+|  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 0.000587 s.
 |  |  |  |  ParticleContainer.build_verlet_list - building verlet list ... 
 |  |  |  |  |  (executing C++ version)
-|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 0.0196 s.
-|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 0.0205 s.
-|  |  build_verlet_list(atoms=2048, case=0): completed in 0.0205 s.
+|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 0.0192 s.
+|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 0.0201 s.
+|  |  build_verlet_list(atoms=2048, case=0): completed in 0.0201 s.
 |  |  ParticleContainer.compute_interactions - computing interactions ...
-|  |  1 x ParticleContainer.compute_interactions_verlet done in 992.0s
+|  |  1 x ParticleContainer.compute_interactions_verlet done in 1110.0s
 |  |  memory used   : 566.2578125 kB
-|  |  total cputime : 992.0 s
-|  |  cputime/iter  : 992.0 s
-|  |  interactions/s: 119.29233871
-|  experiment: nb=8, mem=96 kB, case=0: completed in 0.0567 s.
+|  |  total cputime : 1110.0 s
+|  |  cputime/iter  : 1110.0 s
+|  |  interactions/s: 106.610810811
+|  experiment: nb=8, mem=96 kB, case=0: completed in 0.0559 s.
 |  
 |  experiment: nb=10, mem=188 kB, case=0 ... 
 |  |      nb = 10
@@ -174,20 +174,20 @@ experiment.py ...
 |  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493 ... 
 |  |  |  |  ParticleContainer.build_verlet_list - spatial sort ... 
 |  |  |  |  |  Spatial sort skipped on request.
-|  |  |  |  ParticleContainer.build_verlet_list - spatial sort: completed in 0.000396 s.
+|  |  |  |  ParticleContainer.build_verlet_list - spatial sort: completed in 0.000461 s.
 |  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 0.00127 s.
 |  |  |  |  ParticleContainer.build_verlet_list - building verlet list ... 
 |  |  |  |  |  (executing C++ version)
-|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 0.0396 s.
-|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 0.0414 s.
-|  |  build_verlet_list(atoms=4000, case=0): completed in 0.0414 s.
+|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 0.0389 s.
+|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 0.0407 s.
+|  |  build_verlet_list(atoms=4000, case=0): completed in 0.0408 s.
 |  |  ParticleContainer.compute_interactions - computing interactions ...
-|  |  1 x ParticleContainer.compute_interactions_verlet done in 2039.0s
+|  |  1 x ParticleContainer.compute_interactions_verlet done in 2257.0s
 |  |  memory used   : 1160.7734375 kB
-|  |  total cputime : 2039.0 s
-|  |  cputime/iter  : 2039.0 s
-|  |  interactions/s: 120.234428641
-|  experiment: nb=10, mem=188 kB, case=0: completed in 0.112 s.
+|  |  total cputime : 2257.0 s
+|  |  cputime/iter  : 2257.0 s
+|  |  interactions/s: 108.621178556
+|  experiment: nb=10, mem=188 kB, case=0: completed in 0.11 s.
 |  
 |  experiment: nb=12, mem=324 kB, case=0 ... 
 |  |      nb = 12
@@ -201,20 +201,20 @@ experiment.py ...
 |  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493 ... 
 |  |  |  |  ParticleContainer.build_verlet_list - spatial sort ... 
 |  |  |  |  |  Spatial sort skipped on request.
-|  |  |  |  ParticleContainer.build_verlet_list - spatial sort: completed in 0.000739 s.
+|  |  |  |  ParticleContainer.build_verlet_list - spatial sort: completed in 0.000748 s.
 |  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 0.00197 s.
 |  |  |  |  ParticleContainer.build_verlet_list - building verlet list ... 
 |  |  |  |  |  (executing C++ version)
-|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 0.0667 s.
-|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 0.0695 s.
-|  |  build_verlet_list(atoms=6912, case=0): completed in 0.0695 s.
+|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 0.0658 s.
+|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 0.0686 s.
+|  |  build_verlet_list(atoms=6912, case=0): completed in 0.0687 s.
 |  |  ParticleContainer.compute_interactions - computing interactions ...
-|  |  1 x ParticleContainer.compute_interactions_verlet done in 3718.0s
+|  |  1 x ParticleContainer.compute_interactions_verlet done in 4113.0s
 |  |  memory used   : 2100.09375 kB
-|  |  total cputime : 3718.0 s
-|  |  cputime/iter  : 3718.0 s
-|  |  interactions/s: 120.432490586
-|  experiment: nb=12, mem=324 kB, case=0: completed in 0.19 s.
+|  |  total cputime : 4113.0 s
+|  |  cputime/iter  : 4113.0 s
+|  |  interactions/s: 108.866520788
+|  experiment: nb=12, mem=324 kB, case=0: completed in 0.189 s.
 |  
 |  experiment: nb=15, mem=633 kB, case=0 ... 
 |  |      nb = 15
@@ -228,20 +228,20 @@ experiment.py ...
 |  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493 ... 
 |  |  |  |  ParticleContainer.build_verlet_list - spatial sort ... 
 |  |  |  |  |  Spatial sort skipped on request.
-|  |  |  |  ParticleContainer.build_verlet_list - spatial sort: completed in 0.0015 s.
+|  |  |  |  ParticleContainer.build_verlet_list - spatial sort: completed in 0.00151 s.
 |  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 0.00349 s.
 |  |  |  |  ParticleContainer.build_verlet_list - building verlet list ... 
 |  |  |  |  |  (executing C++ version)
-|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 0.131 s.
-|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 0.136 s.
-|  |  build_verlet_list(atoms=13500, case=0): completed in 0.136 s.
+|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 0.135 s.
+|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 0.14 s.
+|  |  build_verlet_list(atoms=13500, case=0): completed in 0.14 s.
 |  |  ParticleContainer.compute_interactions - computing interactions ...
-|  |  1 x ParticleContainer.compute_interactions_verlet done in 7465.0s
+|  |  1 x ParticleContainer.compute_interactions_verlet done in 8365.0s
 |  |  memory used   : 4159.4296875 kB
-|  |  total cputime : 7465.0 s
-|  |  cputime/iter  : 7465.0 s
-|  |  interactions/s: 119.131145345
-|  experiment: nb=15, mem=633 kB, case=0: completed in 0.371 s.
+|  |  total cputime : 8365.0 s
+|  |  cputime/iter  : 8365.0 s
+|  |  interactions/s: 106.313687986
+|  experiment: nb=15, mem=633 kB, case=0: completed in 0.378 s.
 |  
 |  experiment: nb=18, mem=1.09e+03 kB, case=0 ... 
 |  |      nb = 18
@@ -255,20 +255,20 @@ experiment.py ...
 |  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493 ... 
 |  |  |  |  ParticleContainer.build_verlet_list - spatial sort ... 
 |  |  |  |  |  Spatial sort skipped on request.
-|  |  |  |  ParticleContainer.build_verlet_list - spatial sort: completed in 0.00259 s.
-|  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 0.00785 s.
+|  |  |  |  ParticleContainer.build_verlet_list - spatial sort: completed in 0.00262 s.
+|  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 0.00806 s.
 |  |  |  |  ParticleContainer.build_verlet_list - building verlet list ... 
 |  |  |  |  |  (executing C++ version)
-|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 0.231 s.
-|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 0.242 s.
-|  |  build_verlet_list(atoms=23328, case=0): completed in 0.242 s.
+|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 0.239 s.
+|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 0.249 s.
+|  |  build_verlet_list(atoms=23328, case=0): completed in 0.249 s.
 |  |  ParticleContainer.compute_interactions - computing interactions ...
-|  |  1 x ParticleContainer.compute_interactions_verlet done in 13229.0s
+|  |  1 x ParticleContainer.compute_interactions_verlet done in 14886.0s
 |  |  memory used   : 7434.1796875 kB
-|  |  total cputime : 13229.0 s
-|  |  cputime/iter  : 13229.0 s
-|  |  interactions/s: 120.937788193
-|  experiment: nb=18, mem=1.09e+03 kB, case=0: completed in 0.651 s.
+|  |  total cputime : 14886.0 s
+|  |  cputime/iter  : 14886.0 s
+|  |  interactions/s: 107.47588338
+|  experiment: nb=18, mem=1.09e+03 kB, case=0: completed in 0.658 s.
 |  
 |  experiment: nb=22, mem=2e+03 kB, case=0 ... 
 |  |      nb = 22
@@ -282,19 +282,19 @@ experiment.py ...
 |  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493 ... 
 |  |  |  |  ParticleContainer.build_verlet_list - spatial sort ... 
 |  |  |  |  |  Spatial sort skipped on request.
-|  |  |  |  ParticleContainer.build_verlet_list - spatial sort: completed in 0.0046 s.
-|  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 0.0124 s.
+|  |  |  |  ParticleContainer.build_verlet_list - spatial sort: completed in 0.00457 s.
+|  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 0.0126 s.
 |  |  |  |  ParticleContainer.build_verlet_list - building verlet list ... 
 |  |  |  |  |  (executing C++ version)
-|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 0.423 s.
-|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 0.44 s.
-|  |  build_verlet_list(atoms=42592, case=0): completed in 0.441 s.
+|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 0.42 s.
+|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 0.438 s.
+|  |  build_verlet_list(atoms=42592, case=0): completed in 0.438 s.
 |  |  ParticleContainer.compute_interactions - computing interactions ...
-|  |  1 x ParticleContainer.compute_interactions_verlet done in 25072.0s
+|  |  1 x ParticleContainer.compute_interactions_verlet done in 27689.0s
 |  |  memory used   : 13892.234375 kB
-|  |  total cputime : 25072.0 s
-|  |  cputime/iter  : 25072.0 s
-|  |  interactions/s: 119.763720485
+|  |  total cputime : 27689.0 s
+|  |  cputime/iter  : 27689.0 s
+|  |  interactions/s: 108.444364188
 |  experiment: nb=22, mem=2e+03 kB, case=0: completed in 1.18 s.
 |  
 |  experiment: nb=27, mem=3.69e+03 kB, case=0 ... 
@@ -309,20 +309,20 @@ experiment.py ...
 |  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493 ... 
 |  |  |  |  ParticleContainer.build_verlet_list - spatial sort ... 
 |  |  |  |  |  Spatial sort skipped on request.
-|  |  |  |  ParticleContainer.build_verlet_list - spatial sort: completed in 0.00843 s.
-|  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 0.0209 s.
+|  |  |  |  ParticleContainer.build_verlet_list - spatial sort: completed in 0.00845 s.
+|  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 0.0211 s.
 |  |  |  |  ParticleContainer.build_verlet_list - building verlet list ... 
 |  |  |  |  |  (executing C++ version)
-|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 0.785 s.
-|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 0.815 s.
-|  |  build_verlet_list(atoms=78732, case=0): completed in 0.815 s.
+|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 0.776 s.
+|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 0.806 s.
+|  |  build_verlet_list(atoms=78732, case=0): completed in 0.806 s.
 |  |  ParticleContainer.compute_interactions - computing interactions ...
-|  |  1 x ParticleContainer.compute_interactions_verlet done in 45792.0s
+|  |  1 x ParticleContainer.compute_interactions_verlet done in 51549.0s
 |  |  memory used   : 25638.0546875 kB
-|  |  total cputime : 45792.0 s
-|  |  cputime/iter  : 45792.0 s
-|  |  interactions/s: 120.978031097
-|  experiment: nb=27, mem=3.69e+03 kB, case=0: completed in 2.19 s.
+|  |  total cputime : 51549.0 s
+|  |  cputime/iter  : 51549.0 s
+|  |  interactions/s: 107.46718656
+|  experiment: nb=27, mem=3.69e+03 kB, case=0: completed in 2.18 s.
 |  
 |  experiment: nb=34, mem=7.37e+03 kB, case=0 ... 
 |  |      nb = 34
@@ -337,19 +337,19 @@ experiment.py ...
 |  |  |  |  ParticleContainer.build_verlet_list - spatial sort ... 
 |  |  |  |  |  Spatial sort skipped on request.
 |  |  |  |  ParticleContainer.build_verlet_list - spatial sort: completed in 0.0168 s.
-|  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 0.0392 s.
+|  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 0.0393 s.
 |  |  |  |  ParticleContainer.build_verlet_list - building verlet list ... 
 |  |  |  |  |  (executing C++ version)
-|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 1.61 s.
-|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 1.66 s.
-|  |  build_verlet_list(atoms=157216, case=0): completed in 1.66 s.
+|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 1.58 s.
+|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 1.64 s.
+|  |  build_verlet_list(atoms=157216, case=0): completed in 1.64 s.
 |  |  ParticleContainer.compute_interactions - computing interactions ...
-|  |  1 x ParticleContainer.compute_interactions_verlet done in 94645.0s
+|  |  1 x ParticleContainer.compute_interactions_verlet done in 106196.0s
 |  |  memory used   : 52707.203125 kB
-|  |  total cputime : 94645.0 s
-|  |  cputime/iter  : 94645.0 s
-|  |  interactions/s: 120.970320672
-|  experiment: nb=34, mem=7.37e+03 kB, case=0: completed in 4.42 s.
+|  |  total cputime : 106196.0 s
+|  |  cputime/iter  : 106196.0 s
+|  |  interactions/s: 107.812309315
+|  experiment: nb=34, mem=7.37e+03 kB, case=0: completed in 4.39 s.
 |  
 |  experiment: nb=42, mem=1.39e+04 kB, case=0 ... 
 |  |      nb = 42
@@ -363,20 +363,20 @@ experiment.py ...
 |  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493 ... 
 |  |  |  |  ParticleContainer.build_verlet_list - spatial sort ... 
 |  |  |  |  |  Spatial sort skipped on request.
-|  |  |  |  ParticleContainer.build_verlet_list - spatial sort: completed in 0.0315 s.
-|  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 0.0882 s.
+|  |  |  |  ParticleContainer.build_verlet_list - spatial sort: completed in 0.0318 s.
+|  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 0.0908 s.
 |  |  |  |  ParticleContainer.build_verlet_list - building verlet list ... 
 |  |  |  |  |  (executing C++ version)
-|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 3.05 s.
-|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 3.17 s.
-|  |  build_verlet_list(atoms=296352, case=0): completed in 3.17 s.
+|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 3.02 s.
+|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 3.14 s.
+|  |  build_verlet_list(atoms=296352, case=0): completed in 3.14 s.
 |  |  ParticleContainer.compute_interactions - computing interactions ...
-|  |  1 x ParticleContainer.compute_interactions_verlet done in 180195.0s
+|  |  1 x ParticleContainer.compute_interactions_verlet done in 205483.0s
 |  |  memory used   : 99715.1484375 kB
-|  |  total cputime : 180195.0 s
-|  |  cputime/iter  : 180195.0 s
-|  |  interactions/s: 120.283592774
-|  experiment: nb=42, mem=1.39e+04 kB, case=0: completed in 8.38 s.
+|  |  total cputime : 205483.0 s
+|  |  cputime/iter  : 205483.0 s
+|  |  interactions/s: 105.480755099
+|  experiment: nb=42, mem=1.39e+04 kB, case=0: completed in 8.33 s.
 |  
 |  experiment: nb=52, mem=2.64e+04 kB, case=0 ... 
 |  |      nb = 52
@@ -390,20 +390,20 @@ experiment.py ...
 |  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493 ... 
 |  |  |  |  ParticleContainer.build_verlet_list - spatial sort ... 
 |  |  |  |  |  Spatial sort skipped on request.
-|  |  |  |  ParticleContainer.build_verlet_list - spatial sort: completed in 0.0649 s.
-|  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 0.152 s.
+|  |  |  |  ParticleContainer.build_verlet_list - spatial sort: completed in 0.0648 s.
+|  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 0.153 s.
 |  |  |  |  ParticleContainer.build_verlet_list - building verlet list ... 
 |  |  |  |  |  (executing C++ version)
-|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 5.82 s.
-|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 6.03 s.
-|  |  build_verlet_list(atoms=562432, case=0): completed in 6.03 s.
+|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 5.74 s.
+|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 5.96 s.
+|  |  build_verlet_list(atoms=562432, case=0): completed in 5.96 s.
 |  |  ParticleContainer.compute_interactions - computing interactions ...
-|  |  1 x ParticleContainer.compute_interactions_verlet done in 345277.0s
+|  |  1 x ParticleContainer.compute_interactions_verlet done in 387873.0s
 |  |  memory used   : 192309.507812 kB
-|  |  total cputime : 345277.0 s
-|  |  cputime/iter  : 345277.0 s
-|  |  interactions/s: 121.408660293
-|  experiment: nb=52, mem=2.64e+04 kB, case=0: completed in 15.9 s.
+|  |  total cputime : 387873.0 s
+|  |  cputime/iter  : 387873.0 s
+|  |  interactions/s: 108.075627847
+|  experiment: nb=52, mem=2.64e+04 kB, case=0: completed in 15.8 s.
 |  
 |  experiment: nb=65, mem=5.15e+04 kB, case=0 ... 
 |  |      nb = 65
@@ -417,20 +417,20 @@ experiment.py ...
 |  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493 ... 
 |  |  |  |  ParticleContainer.build_verlet_list - spatial sort ... 
 |  |  |  |  |  Spatial sort skipped on request.
-|  |  |  |  ParticleContainer.build_verlet_list - spatial sort: completed in 0.129 s.
-|  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 0.277 s.
+|  |  |  |  ParticleContainer.build_verlet_list - spatial sort: completed in 0.128 s.
+|  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 0.278 s.
 |  |  |  |  ParticleContainer.build_verlet_list - building verlet list ... 
 |  |  |  |  |  (executing C++ version)
-|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 11.3 s.
-|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 11.7 s.
-|  |  build_verlet_list(atoms=1098500, case=0): completed in 11.7 s.
+|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 11.1 s.
+|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 11.6 s.
+|  |  build_verlet_list(atoms=1098500, case=0): completed in 11.6 s.
 |  |  ParticleContainer.compute_interactions - computing interactions ...
-|  |  1 x ParticleContainer.compute_interactions_verlet done in 708505.0s
+|  |  1 x ParticleContainer.compute_interactions_verlet done in 791399.0s
 |  |  memory used   : 380205.109375 kB
-|  |  total cputime : 708505.0 s
-|  |  cputime/iter  : 708505.0 s
-|  |  interactions/s: 117.221484675
-|  experiment: nb=65, mem=5.15e+04 kB, case=0: completed in 31 s.
+|  |  total cputime : 791399.0 s
+|  |  cputime/iter  : 791399.0 s
+|  |  interactions/s: 104.943281455
+|  experiment: nb=65, mem=5.15e+04 kB, case=0: completed in 30.8 s.
 |  
 |  experiment: nb=81, mem=9.96e+04 kB, case=0 ... 
 |  |      nb = 81
@@ -445,19 +445,19 @@ experiment.py ...
 |  |  |  |  ParticleContainer.build_verlet_list - spatial sort ... 
 |  |  |  |  |  Spatial sort skipped on request.
 |  |  |  |  ParticleContainer.build_verlet_list - spatial sort: completed in 0.254 s.
-|  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 0.65 s.
+|  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 0.663 s.
 |  |  |  |  ParticleContainer.build_verlet_list - building verlet list ... 
 |  |  |  |  |  (executing C++ version)
-|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 22.2 s.
-|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 23.1 s.
-|  |  build_verlet_list(atoms=2125764, case=0): completed in 23.1 s.
+|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 22 s.
+|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 22.9 s.
+|  |  build_verlet_list(atoms=2125764, case=0): completed in 22.9 s.
 |  |  ParticleContainer.compute_interactions - computing interactions ...
-|  |  1 x ParticleContainer.compute_interactions_verlet done in 1374887.0s
+|  |  1 x ParticleContainer.compute_interactions_verlet done in 1545173.0s
 |  |  memory used   : 740121.328125 kB
-|  |  total cputime : 1374887.0 s
-|  |  cputime/iter  : 1374887.0 s
-|  |  interactions/s: 117.708675695
-|  experiment: nb=81, mem=9.96e+04 kB, case=0: completed in 60.3 s.
+|  |  total cputime : 1545173.0 s
+|  |  cputime/iter  : 1545173.0 s
+|  |  interactions/s: 104.736575128
+|  experiment: nb=81, mem=9.96e+04 kB, case=0: completed in 60 s.
 |  
 |  experiment: nb=102, mem=1.99e+05 kB, case=0 ... 
 |  |      nb = 102
@@ -471,20 +471,20 @@ experiment.py ...
 |  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493 ... 
 |  |  |  |  ParticleContainer.build_verlet_list - spatial sort ... 
 |  |  |  |  |  Spatial sort skipped on request.
-|  |  |  |  ParticleContainer.build_verlet_list - spatial sort: completed in 0.518 s.
-|  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 1.15 s.
+|  |  |  |  ParticleContainer.build_verlet_list - spatial sort: completed in 0.519 s.
+|  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 1.16 s.
 |  |  |  |  ParticleContainer.build_verlet_list - building verlet list ... 
 |  |  |  |  |  (executing C++ version)
-|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 44.7 s.
-|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 46.4 s.
-|  |  build_verlet_list(atoms=4244832, case=0): completed in 46.4 s.
+|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 43.6 s.
+|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 45.3 s.
+|  |  build_verlet_list(atoms=4244832, case=0): completed in 45.3 s.
 |  |  ParticleContainer.compute_interactions - computing interactions ...
-|  |  1 x ParticleContainer.compute_interactions_verlet done in 2821287.0s
+|  |  1 x ParticleContainer.compute_interactions_verlet done in 3145601.0s
 |  |  memory used   : 1490122.13281 kB
-|  |  total cputime : 2821287.0 s
-|  |  cputime/iter  : 2821287.0 s
-|  |  interactions/s: 115.652342353
-|  experiment: nb=102, mem=1.99e+05 kB, case=0: completed in 121 s.
+|  |  total cputime : 3145601.0 s
+|  |  cputime/iter  : 3145601.0 s
+|  |  interactions/s: 103.728492584
+|  experiment: nb=102, mem=1.99e+05 kB, case=0: completed in 119 s.
 |  
 |  experiment: nb=128, mem=3.93e+05 kB, case=0 ... 
 |  |      nb = 128
@@ -499,19 +499,19 @@ experiment.py ...
 |  |  |  |  ParticleContainer.build_verlet_list - spatial sort ... 
 |  |  |  |  |  Spatial sort skipped on request.
 |  |  |  |  ParticleContainer.build_verlet_list - spatial sort: completed in 1.04 s.
-|  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 2.12 s.
+|  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 2.13 s.
 |  |  |  |  ParticleContainer.build_verlet_list - building verlet list ... 
 |  |  |  |  |  (executing C++ version)
-|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 91.6 s.
-|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 94.8 s.
-|  |  build_verlet_list(atoms=8388608, case=0): completed in 94.8 s.
+|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 90 s.
+|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 93.1 s.
+|  |  build_verlet_list(atoms=8388608, case=0): completed in 93.1 s.
 |  |  ParticleContainer.compute_interactions - computing interactions ...
-|  |  1 x ParticleContainer.compute_interactions_verlet done in 9296332.0s
+|  |  1 x ParticleContainer.compute_interactions_verlet done in 10217645.0s
 |  |  memory used   : 2962871.53906 kB
-|  |  total cputime : 9296332.0 s
-|  |  cputime/iter  : 9296332.0 s
-|  |  interactions/s: 69.8601566725
-|  experiment: nb=128, mem=3.93e+05 kB, case=0: completed in 245 s.
+|  |  total cputime : 10217645.0 s
+|  |  cputime/iter  : 10217645.0 s
+|  |  interactions/s: 63.5609487313
+|  experiment: nb=128, mem=3.93e+05 kB, case=0: completed in 244 s.
 |  
 |  experiment: nb=3, mem=5.06 kB, case=1 ... 
 |  |      nb = 3
@@ -525,20 +525,20 @@ experiment.py ...
 |  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493 ... 
 |  |  |  |  ParticleContainer.build_verlet_list - spatial sort ... 
 |  |  |  |  |  Spatial sort skipped on request.
-|  |  |  |  ParticleContainer.build_verlet_list - spatial sort: completed in 6.39e-05 s.
+|  |  |  |  ParticleContainer.build_verlet_list - spatial sort: completed in 6.48e-05 s.
 |  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 4.01e-05 s.
 |  |  |  |  ParticleContainer.build_verlet_list - building verlet list ... 
 |  |  |  |  |  (executing C++ version)
-|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 0.00102 s.
-|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 0.00121 s.
-|  |  build_verlet_list(atoms=108, case=1): completed in 0.00139 s.
+|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 0.000998 s.
+|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 0.00118 s.
+|  |  build_verlet_list(atoms=108, case=1): completed in 0.00134 s.
 |  |  ParticleContainer.compute_interactions - computing interactions ...
-|  |  1 x ParticleContainer.compute_interactions_verlet done in 33.0s
+|  |  1 x ParticleContainer.compute_interactions_verlet done in 54.0s
 |  |  memory used   : 17.46875 kB
-|  |  total cputime : 33.0 s
-|  |  cputime/iter  : 33.0 s
-|  |  interactions/s: 92.9696969697
-|  experiment: nb=3, mem=5.06 kB, case=1: completed in 0.0212 s.
+|  |  total cputime : 54.0 s
+|  |  cputime/iter  : 54.0 s
+|  |  interactions/s: 56.8148148148
+|  experiment: nb=3, mem=5.06 kB, case=1: completed in 0.0215 s.
 |  
 |  experiment: nb=4, mem=12 kB, case=1 ... 
 |  |      nb = 4
@@ -552,20 +552,20 @@ experiment.py ...
 |  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493 ... 
 |  |  |  |  ParticleContainer.build_verlet_list - spatial sort ... 
 |  |  |  |  |  Spatial sort skipped on request.
-|  |  |  |  ParticleContainer.build_verlet_list - spatial sort: completed in 7.89e-05 s.
-|  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 9.8e-05 s.
+|  |  |  |  ParticleContainer.build_verlet_list - spatial sort: completed in 6.89e-05 s.
+|  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 7.3e-05 s.
 |  |  |  |  ParticleContainer.build_verlet_list - building verlet list ... 
 |  |  |  |  |  (executing C++ version)
-|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 0.00223 s.
-|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 0.00252 s.
-|  |  build_verlet_list(atoms=256, case=1): completed in 0.00265 s.
+|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 0.00224 s.
+|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 0.00245 s.
+|  |  build_verlet_list(atoms=256, case=1): completed in 0.00254 s.
 |  |  ParticleContainer.compute_interactions - computing interactions ...
-|  |  1 x ParticleContainer.compute_interactions_verlet done in 88.0s
+|  |  1 x ParticleContainer.compute_interactions_verlet done in 84.0s
 |  |  memory used   : 50.125 kB
-|  |  total cputime : 88.0 s
-|  |  cputime/iter  : 88.0 s
-|  |  interactions/s: 108.0
-|  experiment: nb=4, mem=12 kB, case=1: completed in 0.00756 s.
+|  |  total cputime : 84.0 s
+|  |  cputime/iter  : 84.0 s
+|  |  interactions/s: 113.142857143
+|  experiment: nb=4, mem=12 kB, case=1: completed in 0.00741 s.
 |  
 |  experiment: nb=5, mem=23.4 kB, case=1 ... 
 |  |      nb = 5
@@ -579,20 +579,20 @@ experiment.py ...
 |  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493 ... 
 |  |  |  |  ParticleContainer.build_verlet_list - spatial sort ... 
 |  |  |  |  |  Spatial sort skipped on request.
-|  |  |  |  ParticleContainer.build_verlet_list - spatial sort: completed in 8.42e-05 s.
-|  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 0.000156 s.
+|  |  |  |  ParticleContainer.build_verlet_list - spatial sort: completed in 8.39e-05 s.
+|  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 0.000195 s.
 |  |  |  |  ParticleContainer.build_verlet_list - building verlet list ... 
 |  |  |  |  |  (executing C++ version)
-|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 0.00452 s.
-|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 0.00485 s.
-|  |  build_verlet_list(atoms=500, case=1): completed in 0.00496 s.
+|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 0.00448 s.
+|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 0.00483 s.
+|  |  build_verlet_list(atoms=500, case=1): completed in 0.00493 s.
 |  |  ParticleContainer.compute_interactions - computing interactions ...
-|  |  1 x ParticleContainer.compute_interactions_verlet done in 205.0s
+|  |  1 x ParticleContainer.compute_interactions_verlet done in 223.0s
 |  |  memory used   : 113.3203125 kB
-|  |  total cputime : 205.0 s
-|  |  cputime/iter  : 205.0 s
-|  |  interactions/s: 109.804878049
-|  experiment: nb=5, mem=23.4 kB, case=1: completed in 0.014 s.
+|  |  total cputime : 223.0 s
+|  |  cputime/iter  : 223.0 s
+|  |  interactions/s: 100.941704036
+|  experiment: nb=5, mem=23.4 kB, case=1: completed in 0.0139 s.
 |  
 |  experiment: nb=6, mem=40.5 kB, case=1 ... 
 |  |      nb = 6
@@ -606,19 +606,19 @@ experiment.py ...
 |  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493 ... 
 |  |  |  |  ParticleContainer.build_verlet_list - spatial sort ... 
 |  |  |  |  |  Spatial sort skipped on request.
-|  |  |  |  ParticleContainer.build_verlet_list - spatial sort: completed in 0.000121 s.
-|  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 0.000281 s.
+|  |  |  |  ParticleContainer.build_verlet_list - spatial sort: completed in 0.000139 s.
+|  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 0.000287 s.
 |  |  |  |  ParticleContainer.build_verlet_list - building verlet list ... 
 |  |  |  |  |  (executing C++ version)
-|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 0.00786 s.
-|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 0.00834 s.
-|  |  build_verlet_list(atoms=864, case=1): completed in 0.00848 s.
+|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 0.00774 s.
+|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 0.00826 s.
+|  |  build_verlet_list(atoms=864, case=1): completed in 0.0084 s.
 |  |  ParticleContainer.compute_interactions - computing interactions ...
-|  |  1 x ParticleContainer.compute_interactions_verlet done in 338.0s
+|  |  1 x ParticleContainer.compute_interactions_verlet done in 429.0s
 |  |  memory used   : 211.875 kB
-|  |  total cputime : 338.0 s
-|  |  cputime/iter  : 338.0 s
-|  |  interactions/s: 127.24260355
+|  |  total cputime : 429.0 s
+|  |  cputime/iter  : 429.0 s
+|  |  interactions/s: 100.251748252
 |  experiment: nb=6, mem=40.5 kB, case=1: completed in 0.0236 s.
 |  
 |  experiment: nb=7, mem=64.3 kB, case=1 ... 
@@ -633,20 +633,20 @@ experiment.py ...
 |  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493 ... 
 |  |  |  |  ParticleContainer.build_verlet_list - spatial sort ... 
 |  |  |  |  |  Spatial sort skipped on request.
-|  |  |  |  ParticleContainer.build_verlet_list - spatial sort: completed in 0.000229 s.
-|  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 0.000345 s.
+|  |  |  |  ParticleContainer.build_verlet_list - spatial sort: completed in 0.000197 s.
+|  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 0.000351 s.
 |  |  |  |  ParticleContainer.build_verlet_list - building verlet list ... 
 |  |  |  |  |  (executing C++ version)
 |  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 0.0125 s.
 |  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 0.0131 s.
-|  |  build_verlet_list(atoms=1372, case=1): completed in 0.0134 s.
+|  |  build_verlet_list(atoms=1372, case=1): completed in 0.0133 s.
 |  |  ParticleContainer.compute_interactions - computing interactions ...
-|  |  1 x ParticleContainer.compute_interactions_verlet done in 660.0s
+|  |  1 x ParticleContainer.compute_interactions_verlet done in 750.0s
 |  |  memory used   : 358.9375 kB
-|  |  total cputime : 660.0 s
-|  |  cputime/iter  : 660.0 s
-|  |  interactions/s: 112.2
-|  experiment: nb=7, mem=64.3 kB, case=1: completed in 0.0372 s.
+|  |  total cputime : 750.0 s
+|  |  cputime/iter  : 750.0 s
+|  |  interactions/s: 98.736
+|  experiment: nb=7, mem=64.3 kB, case=1: completed in 0.0371 s.
 |  
 |  experiment: nb=8, mem=96 kB, case=1 ... 
 |  |      nb = 8
@@ -660,20 +660,20 @@ experiment.py ...
 |  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493 ... 
 |  |  |  |  ParticleContainer.build_verlet_list - spatial sort ... 
 |  |  |  |  |  Spatial sort skipped on request.
-|  |  |  |  ParticleContainer.build_verlet_list - spatial sort: completed in 0.000287 s.
-|  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 0.000533 s.
+|  |  |  |  ParticleContainer.build_verlet_list - spatial sort: completed in 0.00029 s.
+|  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 0.000539 s.
 |  |  |  |  ParticleContainer.build_verlet_list - building verlet list ... 
 |  |  |  |  |  (executing C++ version)
-|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 0.0193 s.
-|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 0.0202 s.
-|  |  build_verlet_list(atoms=2048, case=1): completed in 0.0205 s.
+|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 0.0191 s.
+|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 0.02 s.
+|  |  build_verlet_list(atoms=2048, case=1): completed in 0.0203 s.
 |  |  ParticleContainer.compute_interactions - computing interactions ...
-|  |  1 x ParticleContainer.compute_interactions_verlet done in 1135.0s
+|  |  1 x ParticleContainer.compute_interactions_verlet done in 1206.0s
 |  |  memory used   : 566.2578125 kB
-|  |  total cputime : 1135.0 s
-|  |  cputime/iter  : 1135.0 s
-|  |  interactions/s: 104.262555066
-|  experiment: nb=8, mem=96 kB, case=1: completed in 0.0561 s.
+|  |  total cputime : 1206.0 s
+|  |  cputime/iter  : 1206.0 s
+|  |  interactions/s: 98.1243781095
+|  experiment: nb=8, mem=96 kB, case=1: completed in 0.0556 s.
 |  
 |  experiment: nb=10, mem=188 kB, case=1 ... 
 |  |      nb = 10
@@ -687,20 +687,20 @@ experiment.py ...
 |  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493 ... 
 |  |  |  |  ParticleContainer.build_verlet_list - spatial sort ... 
 |  |  |  |  |  Spatial sort skipped on request.
-|  |  |  |  ParticleContainer.build_verlet_list - spatial sort: completed in 0.000578 s.
-|  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 0.00124 s.
+|  |  |  |  ParticleContainer.build_verlet_list - spatial sort: completed in 0.000569 s.
+|  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 0.00128 s.
 |  |  |  |  ParticleContainer.build_verlet_list - building verlet list ... 
 |  |  |  |  |  (executing C++ version)
-|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 0.0389 s.
-|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 0.0408 s.
-|  |  build_verlet_list(atoms=4000, case=1): completed in 0.0414 s.
+|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 0.0385 s.
+|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 0.0404 s.
+|  |  build_verlet_list(atoms=4000, case=1): completed in 0.041 s.
 |  |  ParticleContainer.compute_interactions - computing interactions ...
-|  |  1 x ParticleContainer.compute_interactions_verlet done in 2506.0s
+|  |  1 x ParticleContainer.compute_interactions_verlet done in 2656.0s
 |  |  memory used   : 1160.7734375 kB
-|  |  total cputime : 2506.0 s
-|  |  cputime/iter  : 2506.0 s
-|  |  interactions/s: 97.8284118117
-|  experiment: nb=10, mem=188 kB, case=1: completed in 0.111 s.
+|  |  total cputime : 2656.0 s
+|  |  cputime/iter  : 2656.0 s
+|  |  interactions/s: 92.3034638554
+|  experiment: nb=10, mem=188 kB, case=1: completed in 0.11 s.
 |  
 |  experiment: nb=12, mem=324 kB, case=1 ... 
 |  |      nb = 12
@@ -714,20 +714,20 @@ experiment.py ...
 |  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493 ... 
 |  |  |  |  ParticleContainer.build_verlet_list - spatial sort ... 
 |  |  |  |  |  Spatial sort skipped on request.
-|  |  |  |  ParticleContainer.build_verlet_list - spatial sort: completed in 0.000941 s.
-|  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 0.00195 s.
+|  |  |  |  ParticleContainer.build_verlet_list - spatial sort: completed in 0.00096 s.
+|  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 0.00199 s.
 |  |  |  |  ParticleContainer.build_verlet_list - building verlet list ... 
 |  |  |  |  |  (executing C++ version)
-|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 0.0678 s.
-|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 0.0708 s.
-|  |  build_verlet_list(atoms=6912, case=1): completed in 0.0718 s.
+|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 0.0675 s.
+|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 0.0706 s.
+|  |  build_verlet_list(atoms=6912, case=1): completed in 0.0715 s.
 |  |  ParticleContainer.compute_interactions - computing interactions ...
-|  |  1 x ParticleContainer.compute_interactions_verlet done in 4892.0s
+|  |  1 x ParticleContainer.compute_interactions_verlet done in 5355.0s
 |  |  memory used   : 2100.09375 kB
-|  |  total cputime : 4892.0 s
-|  |  cputime/iter  : 4892.0 s
-|  |  interactions/s: 91.5306623058
-|  experiment: nb=12, mem=324 kB, case=1: completed in 0.192 s.
+|  |  total cputime : 5355.0 s
+|  |  cputime/iter  : 5355.0 s
+|  |  interactions/s: 83.6168067227
+|  experiment: nb=12, mem=324 kB, case=1: completed in 0.191 s.
 |  
 |  experiment: nb=15, mem=633 kB, case=1 ... 
 |  |      nb = 15
@@ -741,20 +741,20 @@ experiment.py ...
 |  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493 ... 
 |  |  |  |  ParticleContainer.build_verlet_list - spatial sort ... 
 |  |  |  |  |  Spatial sort skipped on request.
-|  |  |  |  ParticleContainer.build_verlet_list - spatial sort: completed in 0.00198 s.
-|  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 0.00358 s.
+|  |  |  |  ParticleContainer.build_verlet_list - spatial sort: completed in 0.00192 s.
+|  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 0.00354 s.
 |  |  |  |  ParticleContainer.build_verlet_list - building verlet list ... 
 |  |  |  |  |  (executing C++ version)
-|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 0.134 s.
-|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 0.14 s.
-|  |  build_verlet_list(atoms=13500, case=1): completed in 0.141 s.
+|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 0.132 s.
+|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 0.138 s.
+|  |  build_verlet_list(atoms=13500, case=1): completed in 0.14 s.
 |  |  ParticleContainer.compute_interactions - computing interactions ...
-|  |  1 x ParticleContainer.compute_interactions_verlet done in 11590.0s
+|  |  1 x ParticleContainer.compute_interactions_verlet done in 12443.0s
 |  |  memory used   : 4159.4296875 kB
-|  |  total cputime : 11590.0 s
-|  |  cputime/iter  : 11590.0 s
-|  |  interactions/s: 76.731147541
-|  experiment: nb=15, mem=633 kB, case=1: completed in 0.378 s.
+|  |  total cputime : 12443.0 s
+|  |  cputime/iter  : 12443.0 s
+|  |  interactions/s: 71.4710278872
+|  experiment: nb=15, mem=633 kB, case=1: completed in 0.376 s.
 |  
 |  experiment: nb=18, mem=1.09e+03 kB, case=1 ... 
 |  |      nb = 18
@@ -768,20 +768,20 @@ experiment.py ...
 |  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493 ... 
 |  |  |  |  ParticleContainer.build_verlet_list - spatial sort ... 
 |  |  |  |  |  Spatial sort skipped on request.
-|  |  |  |  ParticleContainer.build_verlet_list - spatial sort: completed in 0.00346 s.
-|  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 0.00783 s.
+|  |  |  |  ParticleContainer.build_verlet_list - spatial sort: completed in 0.0034 s.
+|  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 0.00809 s.
 |  |  |  |  ParticleContainer.build_verlet_list - building verlet list ... 
 |  |  |  |  |  (executing C++ version)
-|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 0.238 s.
-|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 0.249 s.
-|  |  build_verlet_list(atoms=23328, case=1): completed in 0.253 s.
+|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 0.234 s.
+|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 0.246 s.
+|  |  build_verlet_list(atoms=23328, case=1): completed in 0.249 s.
 |  |  ParticleContainer.compute_interactions - computing interactions ...
-|  |  1 x ParticleContainer.compute_interactions_verlet done in 22515.0s
+|  |  1 x ParticleContainer.compute_interactions_verlet done in 23702.0s
 |  |  memory used   : 7434.1796875 kB
-|  |  total cputime : 22515.0 s
-|  |  cputime/iter  : 22515.0 s
-|  |  interactions/s: 71.0586719964
-|  experiment: nb=18, mem=1.09e+03 kB, case=1: completed in 0.663 s.
+|  |  total cputime : 23702.0 s
+|  |  cputime/iter  : 23702.0 s
+|  |  interactions/s: 67.5000421905
+|  experiment: nb=18, mem=1.09e+03 kB, case=1: completed in 0.657 s.
 |  
 |  experiment: nb=22, mem=2e+03 kB, case=1 ... 
 |  |      nb = 22
@@ -795,20 +795,20 @@ experiment.py ...
 |  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493 ... 
 |  |  |  |  ParticleContainer.build_verlet_list - spatial sort ... 
 |  |  |  |  |  Spatial sort skipped on request.
-|  |  |  |  ParticleContainer.build_verlet_list - spatial sort: completed in 0.00645 s.
-|  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 0.0123 s.
+|  |  |  |  ParticleContainer.build_verlet_list - spatial sort: completed in 0.00646 s.
+|  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 0.0126 s.
 |  |  |  |  ParticleContainer.build_verlet_list - building verlet list ... 
 |  |  |  |  |  (executing C++ version)
-|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 0.432 s.
-|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 0.451 s.
-|  |  build_verlet_list(atoms=42592, case=1): completed in 0.457 s.
+|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 0.429 s.
+|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 0.448 s.
+|  |  build_verlet_list(atoms=42592, case=1): completed in 0.454 s.
 |  |  ParticleContainer.compute_interactions - computing interactions ...
-|  |  1 x ParticleContainer.compute_interactions_verlet done in 44856.0s
+|  |  1 x ParticleContainer.compute_interactions_verlet done in 46777.0s
 |  |  memory used   : 13892.234375 kB
-|  |  total cputime : 44856.0 s
-|  |  cputime/iter  : 44856.0 s
-|  |  interactions/s: 66.9412341716
-|  experiment: nb=22, mem=2e+03 kB, case=1: completed in 1.21 s.
+|  |  total cputime : 46777.0 s
+|  |  cputime/iter  : 46777.0 s
+|  |  interactions/s: 64.1921457126
+|  experiment: nb=22, mem=2e+03 kB, case=1: completed in 1.2 s.
 |  
 |  experiment: nb=27, mem=3.69e+03 kB, case=1 ... 
 |  |      nb = 27
@@ -822,20 +822,20 @@ experiment.py ...
 |  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493 ... 
 |  |  |  |  ParticleContainer.build_verlet_list - spatial sort ... 
 |  |  |  |  |  Spatial sort skipped on request.
-|  |  |  |  ParticleContainer.build_verlet_list - spatial sort: completed in 0.0125 s.
-|  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 0.0209 s.
+|  |  |  |  ParticleContainer.build_verlet_list - spatial sort: completed in 0.0124 s.
+|  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 0.0211 s.
 |  |  |  |  ParticleContainer.build_verlet_list - building verlet list ... 
 |  |  |  |  |  (executing C++ version)
-|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 0.796 s.
-|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 0.83 s.
-|  |  build_verlet_list(atoms=78732, case=1): completed in 0.84 s.
+|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 0.79 s.
+|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 0.823 s.
+|  |  build_verlet_list(atoms=78732, case=1): completed in 0.834 s.
 |  |  ParticleContainer.compute_interactions - computing interactions ...
-|  |  1 x ParticleContainer.compute_interactions_verlet done in 85583.0s
+|  |  1 x ParticleContainer.compute_interactions_verlet done in 89812.0s
 |  |  memory used   : 25638.0546875 kB
-|  |  total cputime : 85583.0 s
-|  |  cputime/iter  : 85583.0 s
-|  |  interactions/s: 64.7304488041
-|  experiment: nb=27, mem=3.69e+03 kB, case=1: completed in 2.24 s.
+|  |  total cputime : 89812.0 s
+|  |  cputime/iter  : 89812.0 s
+|  |  interactions/s: 61.6824700485
+|  experiment: nb=27, mem=3.69e+03 kB, case=1: completed in 2.23 s.
 |  
 |  experiment: nb=34, mem=7.37e+03 kB, case=1 ... 
 |  |      nb = 34
@@ -849,20 +849,20 @@ experiment.py ...
 |  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493 ... 
 |  |  |  |  ParticleContainer.build_verlet_list - spatial sort ... 
 |  |  |  |  |  Spatial sort skipped on request.
-|  |  |  |  ParticleContainer.build_verlet_list - spatial sort: completed in 0.0262 s.
-|  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 0.0391 s.
+|  |  |  |  ParticleContainer.build_verlet_list - spatial sort: completed in 0.026 s.
+|  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 0.0393 s.
 |  |  |  |  ParticleContainer.build_verlet_list - building verlet list ... 
 |  |  |  |  |  (executing C++ version)
-|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 1.61 s.
-|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 1.68 s.
-|  |  build_verlet_list(atoms=157216, case=1): completed in 1.7 s.
+|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 1.59 s.
+|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 1.66 s.
+|  |  build_verlet_list(atoms=157216, case=1): completed in 1.68 s.
 |  |  ParticleContainer.compute_interactions - computing interactions ...
-|  |  1 x ParticleContainer.compute_interactions_verlet done in 185253.0s
+|  |  1 x ParticleContainer.compute_interactions_verlet done in 192766.0s
 |  |  memory used   : 52707.203125 kB
-|  |  total cputime : 185253.0 s
-|  |  cputime/iter  : 185253.0 s
-|  |  interactions/s: 61.8032420528
-|  experiment: nb=34, mem=7.37e+03 kB, case=1: completed in 4.53 s.
+|  |  total cputime : 192766.0 s
+|  |  cputime/iter  : 192766.0 s
+|  |  interactions/s: 59.3944782794
+|  experiment: nb=34, mem=7.37e+03 kB, case=1: completed in 4.49 s.
 |  
 |  experiment: nb=42, mem=1.39e+04 kB, case=1 ... 
 |  |      nb = 42
@@ -876,20 +876,20 @@ experiment.py ...
 |  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493 ... 
 |  |  |  |  ParticleContainer.build_verlet_list - spatial sort ... 
 |  |  |  |  |  Spatial sort skipped on request.
-|  |  |  |  ParticleContainer.build_verlet_list - spatial sort: completed in 0.0511 s.
-|  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 0.0883 s.
+|  |  |  |  ParticleContainer.build_verlet_list - spatial sort: completed in 0.0507 s.
+|  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 0.0898 s.
 |  |  |  |  ParticleContainer.build_verlet_list - building verlet list ... 
 |  |  |  |  |  (executing C++ version)
-|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 3.12 s.
-|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 3.26 s.
-|  |  build_verlet_list(atoms=296352, case=1): completed in 3.3 s.
+|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 3.06 s.
+|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 3.2 s.
+|  |  build_verlet_list(atoms=296352, case=1): completed in 3.24 s.
 |  |  ParticleContainer.compute_interactions - computing interactions ...
-|  |  1 x ParticleContainer.compute_interactions_verlet done in 342814.0s
+|  |  1 x ParticleContainer.compute_interactions_verlet done in 362632.0s
 |  |  memory used   : 99715.1484375 kB
-|  |  total cputime : 342814.0 s
-|  |  cputime/iter  : 342814.0 s
-|  |  interactions/s: 63.2252533444
-|  experiment: nb=42, mem=1.39e+04 kB, case=1: completed in 8.64 s.
+|  |  total cputime : 362632.0 s
+|  |  cputime/iter  : 362632.0 s
+|  |  interactions/s: 59.7699651437
+|  experiment: nb=42, mem=1.39e+04 kB, case=1: completed in 8.54 s.
 |  
 |  experiment: nb=52, mem=2.64e+04 kB, case=1 ... 
 |  |      nb = 52
@@ -904,19 +904,19 @@ experiment.py ...
 |  |  |  |  ParticleContainer.build_verlet_list - spatial sort ... 
 |  |  |  |  |  Spatial sort skipped on request.
 |  |  |  |  ParticleContainer.build_verlet_list - spatial sort: completed in 0.103 s.
-|  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 0.152 s.
+|  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 0.153 s.
 |  |  |  |  ParticleContainer.build_verlet_list - building verlet list ... 
 |  |  |  |  |  (executing C++ version)
-|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 5.95 s.
-|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 6.2 s.
-|  |  build_verlet_list(atoms=562432, case=1): completed in 6.28 s.
+|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 5.88 s.
+|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 6.13 s.
+|  |  build_verlet_list(atoms=562432, case=1): completed in 6.21 s.
 |  |  ParticleContainer.compute_interactions - computing interactions ...
-|  |  1 x ParticleContainer.compute_interactions_verlet done in 778326.0s
+|  |  1 x ParticleContainer.compute_interactions_verlet done in 797162.0s
 |  |  memory used   : 192309.507812 kB
-|  |  total cputime : 778326.0 s
-|  |  cputime/iter  : 778326.0 s
-|  |  interactions/s: 53.8586890326
-|  experiment: nb=52, mem=2.64e+04 kB, case=1: completed in 16.5 s.
+|  |  total cputime : 797162.0 s
+|  |  cputime/iter  : 797162.0 s
+|  |  interactions/s: 52.586071589
+|  experiment: nb=52, mem=2.64e+04 kB, case=1: completed in 16.4 s.
 |  
 |  experiment: nb=65, mem=5.15e+04 kB, case=1 ... 
 |  |      nb = 65
@@ -930,20 +930,20 @@ experiment.py ...
 |  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493 ... 
 |  |  |  |  ParticleContainer.build_verlet_list - spatial sort ... 
 |  |  |  |  |  Spatial sort skipped on request.
-|  |  |  |  ParticleContainer.build_verlet_list - spatial sort: completed in 0.213 s.
+|  |  |  |  ParticleContainer.build_verlet_list - spatial sort: completed in 0.212 s.
 |  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 0.277 s.
 |  |  |  |  ParticleContainer.build_verlet_list - building verlet list ... 
 |  |  |  |  |  (executing C++ version)
-|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 11.6 s.
-|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 12.1 s.
-|  |  build_verlet_list(atoms=1098500, case=1): completed in 12.3 s.
+|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 11.5 s.
+|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 12 s.
+|  |  build_verlet_list(atoms=1098500, case=1): completed in 12.2 s.
 |  |  ParticleContainer.compute_interactions - computing interactions ...
-|  |  1 x ParticleContainer.compute_interactions_verlet done in 2980330.0s
+|  |  1 x ParticleContainer.compute_interactions_verlet done in 2981927.0s
 |  |  memory used   : 380205.109375 kB
-|  |  total cputime : 2980330.0 s
-|  |  cputime/iter  : 2980330.0 s
-|  |  interactions/s: 27.8667154308
-|  experiment: nb=65, mem=5.15e+04 kB, case=1: completed in 33.7 s.
+|  |  total cputime : 2981927.0 s
+|  |  cputime/iter  : 2981927.0 s
+|  |  interactions/s: 27.8517911404
+|  experiment: nb=65, mem=5.15e+04 kB, case=1: completed in 33.5 s.
 |  
 |  experiment: nb=81, mem=9.96e+04 kB, case=1 ... 
 |  |      nb = 81
@@ -957,20 +957,20 @@ experiment.py ...
 |  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493 ... 
 |  |  |  |  ParticleContainer.build_verlet_list - spatial sort ... 
 |  |  |  |  |  Spatial sort skipped on request.
-|  |  |  |  ParticleContainer.build_verlet_list - spatial sort: completed in 0.437 s.
-|  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 0.649 s.
+|  |  |  |  ParticleContainer.build_verlet_list - spatial sort: completed in 0.435 s.
+|  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 0.663 s.
 |  |  |  |  ParticleContainer.build_verlet_list - building verlet list ... 
 |  |  |  |  |  (executing C++ version)
-|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 23.1 s.
-|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 24.1 s.
-|  |  build_verlet_list(atoms=2125764, case=1): completed in 24.5 s.
+|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 22.7 s.
+|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 23.8 s.
+|  |  build_verlet_list(atoms=2125764, case=1): completed in 24.1 s.
 |  |  ParticleContainer.compute_interactions - computing interactions ...
-|  |  1 x ParticleContainer.compute_interactions_verlet done in 8056844.0s
+|  |  1 x ParticleContainer.compute_interactions_verlet done in 8252401.0s
 |  |  memory used   : 740121.328125 kB
-|  |  total cputime : 8056844.0 s
-|  |  cputime/iter  : 8056844.0 s
-|  |  interactions/s: 20.0867893185
-|  experiment: nb=81, mem=9.96e+04 kB, case=1: completed in 68.4 s.
+|  |  total cputime : 8252401.0 s
+|  |  cputime/iter  : 8252401.0 s
+|  |  interactions/s: 19.6107930286
+|  experiment: nb=81, mem=9.96e+04 kB, case=1: completed in 67.9 s.
 |  
 |  experiment: nb=102, mem=1.99e+05 kB, case=1 ... 
 |  |      nb = 102
@@ -984,20 +984,20 @@ experiment.py ...
 |  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493 ... 
 |  |  |  |  ParticleContainer.build_verlet_list - spatial sort ... 
 |  |  |  |  |  Spatial sort skipped on request.
-|  |  |  |  ParticleContainer.build_verlet_list - spatial sort: completed in 0.971 s.
-|  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 1.15 s.
+|  |  |  |  ParticleContainer.build_verlet_list - spatial sort: completed in 0.964 s.
+|  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 1.17 s.
 |  |  |  |  ParticleContainer.build_verlet_list - building verlet list ... 
 |  |  |  |  |  (executing C++ version)
-|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 52.5 s.
-|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 54.6 s.
-|  |  build_verlet_list(atoms=4244832, case=1): completed in 55.3 s.
+|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 51.1 s.
+|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 53.3 s.
+|  |  build_verlet_list(atoms=4244832, case=1): completed in 54 s.
 |  |  ParticleContainer.compute_interactions - computing interactions ...
-|  |  1 x ParticleContainer.compute_interactions_verlet done in 19149494.0s
+|  |  1 x ParticleContainer.compute_interactions_verlet done in 19498432.0s
 |  |  memory used   : 1490122.13281 kB
-|  |  total cputime : 19149494.0 s
-|  |  cputime/iter  : 19149494.0 s
-|  |  interactions/s: 17.0390115791
-|  experiment: nb=102, mem=1.99e+05 kB, case=1: completed in 146 s.
+|  |  total cputime : 19498432.0 s
+|  |  cputime/iter  : 19498432.0 s
+|  |  interactions/s: 16.7340866178
+|  experiment: nb=102, mem=1.99e+05 kB, case=1: completed in 144 s.
 |  
 |  experiment: nb=128, mem=3.93e+05 kB, case=1 ... 
 |  |      nb = 128
@@ -1012,19 +1012,19 @@ experiment.py ...
 |  |  |  |  ParticleContainer.build_verlet_list - spatial sort ... 
 |  |  |  |  |  Spatial sort skipped on request.
 |  |  |  |  ParticleContainer.build_verlet_list - spatial sort: completed in 2.08 s.
-|  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 2.11 s.
+|  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 2.13 s.
 |  |  |  |  ParticleContainer.build_verlet_list - building verlet list ... 
 |  |  |  |  |  (executing C++ version)
-|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 134 s.
-|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 138 s.
-|  |  build_verlet_list(atoms=8388608, case=1): completed in 139 s.
+|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 132 s.
+|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 136 s.
+|  |  build_verlet_list(atoms=8388608, case=1): completed in 138 s.
 |  |  ParticleContainer.compute_interactions - computing interactions ...
-|  |  1 x ParticleContainer.compute_interactions_verlet done in 46710360.0s
+|  |  1 x ParticleContainer.compute_interactions_verlet done in 45724172.0s
 |  |  memory used   : 2962871.53906 kB
-|  |  total cputime : 46710360.0 s
-|  |  cputime/iter  : 46710360.0 s
-|  |  interactions/s: 13.9036224512
-|  experiment: nb=128, mem=3.93e+05 kB, case=1: completed in 327 s.
+|  |  total cputime : 45724172.0 s
+|  |  cputime/iter  : 45724172.0 s
+|  |  interactions/s: 14.2034985346
+|  experiment: nb=128, mem=3.93e+05 kB, case=1: completed in 323 s.
 |  
 |  experiment: nb=3, mem=5.06 kB, case=2 ... 
 |  |      nb = 3
@@ -1036,20 +1036,20 @@ experiment.py ...
 |  |  nb*a/w = 1.41421356237
 |  |  build_verlet_list(atoms=108, case=2) ... 
 |  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493 ... 
-|  |  |  |  ParticleContainer.build_verlet_list - spatial sort ... completed in 5.51e-05 s.
-|  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 3.98e-05 s.
+|  |  |  |  ParticleContainer.build_verlet_list - spatial sort ... completed in 7.3e-05 s.
+|  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 4.2e-05 s.
 |  |  |  |  ParticleContainer.build_verlet_list - building verlet list ... 
 |  |  |  |  |  (executing C++ version)
-|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 0.000997 s.
-|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 0.00117 s.
-|  |  build_verlet_list(atoms=108, case=2): completed in 0.00121 s.
+|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 0.001 s.
+|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 0.0012 s.
+|  |  build_verlet_list(atoms=108, case=2): completed in 0.00124 s.
 |  |  ParticleContainer.compute_interactions - computing interactions ...
-|  |  1 x ParticleContainer.compute_interactions_verlet done in 51.0s
+|  |  1 x ParticleContainer.compute_interactions_verlet done in 32.0s
 |  |  memory used   : 17.46875 kB
-|  |  total cputime : 51.0 s
-|  |  cputime/iter  : 51.0 s
-|  |  interactions/s: 60.1568627451
-|  experiment: nb=3, mem=5.06 kB, case=2: completed in 0.0215 s.
+|  |  total cputime : 32.0 s
+|  |  cputime/iter  : 32.0 s
+|  |  interactions/s: 95.875
+|  experiment: nb=3, mem=5.06 kB, case=2: completed in 0.0213 s.
 |  
 |  experiment: nb=4, mem=12 kB, case=2 ... 
 |  |      nb = 4
@@ -1061,20 +1061,20 @@ experiment.py ...
 |  |  nb*a/w = 1.88561808316
 |  |  build_verlet_list(atoms=256, case=2) ... 
 |  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493 ... 
-|  |  |  |  ParticleContainer.build_verlet_list - spatial sort ... completed in 6.1e-05 s.
+|  |  |  |  ParticleContainer.build_verlet_list - spatial sort ... completed in 7.1e-05 s.
 |  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 7.2e-05 s.
 |  |  |  |  ParticleContainer.build_verlet_list - building verlet list ... 
 |  |  |  |  |  (executing C++ version)
-|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 0.00227 s.
+|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 0.00224 s.
 |  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 0.00247 s.
 |  |  build_verlet_list(atoms=256, case=2): completed in 0.00251 s.
 |  |  ParticleContainer.compute_interactions - computing interactions ...
-|  |  1 x ParticleContainer.compute_interactions_verlet done in 88.0s
+|  |  1 x ParticleContainer.compute_interactions_verlet done in 112.0s
 |  |  memory used   : 50.125 kB
-|  |  total cputime : 88.0 s
-|  |  cputime/iter  : 88.0 s
-|  |  interactions/s: 108.0
-|  experiment: nb=4, mem=12 kB, case=2: completed in 0.00739 s.
+|  |  total cputime : 112.0 s
+|  |  cputime/iter  : 112.0 s
+|  |  interactions/s: 84.8571428571
+|  experiment: nb=4, mem=12 kB, case=2: completed in 0.00744 s.
 |  
 |  experiment: nb=5, mem=23.4 kB, case=2 ... 
 |  |      nb = 5
@@ -1086,20 +1086,20 @@ experiment.py ...
 |  |  nb*a/w = 2.35702260396
 |  |  build_verlet_list(atoms=500, case=2) ... 
 |  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493 ... 
-|  |  |  |  ParticleContainer.build_verlet_list - spatial sort ... completed in 7.3e-05 s.
-|  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 0.000156 s.
+|  |  |  |  ParticleContainer.build_verlet_list - spatial sort ... completed in 7.39e-05 s.
+|  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 0.00016 s.
 |  |  |  |  ParticleContainer.build_verlet_list - building verlet list ... 
 |  |  |  |  |  (executing C++ version)
-|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 0.00454 s.
-|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 0.00484 s.
-|  |  build_verlet_list(atoms=500, case=2): completed in 0.00487 s.
+|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 0.00443 s.
+|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 0.00473 s.
+|  |  build_verlet_list(atoms=500, case=2): completed in 0.00476 s.
 |  |  ParticleContainer.compute_interactions - computing interactions ...
-|  |  1 x ParticleContainer.compute_interactions_verlet done in 177.0s
+|  |  1 x ParticleContainer.compute_interactions_verlet done in 240.0s
 |  |  memory used   : 113.3203125 kB
-|  |  total cputime : 177.0 s
-|  |  cputime/iter  : 177.0 s
-|  |  interactions/s: 127.175141243
-|  experiment: nb=5, mem=23.4 kB, case=2: completed in 0.0139 s.
+|  |  total cputime : 240.0 s
+|  |  cputime/iter  : 240.0 s
+|  |  interactions/s: 93.7916666667
+|  experiment: nb=5, mem=23.4 kB, case=2: completed in 0.0138 s.
 |  
 |  experiment: nb=6, mem=40.5 kB, case=2 ... 
 |  |      nb = 6
@@ -1111,20 +1111,20 @@ experiment.py ...
 |  |  nb*a/w = 2.82842712475
 |  |  build_verlet_list(atoms=864, case=2) ... 
 |  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493 ... 
-|  |  |  |  ParticleContainer.build_verlet_list - spatial sort ... completed in 0.000104 s.
-|  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 0.000288 s.
+|  |  |  |  ParticleContainer.build_verlet_list - spatial sort ... completed in 0.000105 s.
+|  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 0.000238 s.
 |  |  |  |  ParticleContainer.build_verlet_list - building verlet list ... 
 |  |  |  |  |  (executing C++ version)
 |  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 0.00768 s.
-|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 0.00814 s.
-|  |  build_verlet_list(atoms=864, case=2): completed in 0.00817 s.
+|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 0.00809 s.
+|  |  build_verlet_list(atoms=864, case=2): completed in 0.00811 s.
 |  |  ParticleContainer.compute_interactions - computing interactions ...
-|  |  1 x ParticleContainer.compute_interactions_verlet done in 355.0s
+|  |  1 x ParticleContainer.compute_interactions_verlet done in 415.0s
 |  |  memory used   : 211.875 kB
-|  |  total cputime : 355.0 s
-|  |  cputime/iter  : 355.0 s
-|  |  interactions/s: 121.149295775
-|  experiment: nb=6, mem=40.5 kB, case=2: completed in 0.0234 s.
+|  |  total cputime : 415.0 s
+|  |  cputime/iter  : 415.0 s
+|  |  interactions/s: 103.63373494
+|  experiment: nb=6, mem=40.5 kB, case=2: completed in 0.0233 s.
 |  
 |  experiment: nb=7, mem=64.3 kB, case=2 ... 
 |  |      nb = 7
@@ -1136,20 +1136,20 @@ experiment.py ...
 |  |  nb*a/w = 3.29983164554
 |  |  build_verlet_list(atoms=1372, case=2) ... 
 |  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493 ... 
-|  |  |  |  ParticleContainer.build_verlet_list - spatial sort ... completed in 0.000193 s.
-|  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 0.000387 s.
+|  |  |  |  ParticleContainer.build_verlet_list - spatial sort ... completed in 0.000154 s.
+|  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 0.000349 s.
 |  |  |  |  ParticleContainer.build_verlet_list - building verlet list ... 
 |  |  |  |  |  (executing C++ version)
-|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 0.0122 s.
-|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 0.0129 s.
-|  |  build_verlet_list(atoms=1372, case=2): completed in 0.0129 s.
+|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 0.0121 s.
+|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 0.0127 s.
+|  |  build_verlet_list(atoms=1372, case=2): completed in 0.0127 s.
 |  |  ParticleContainer.compute_interactions - computing interactions ...
-|  |  1 x ParticleContainer.compute_interactions_verlet done in 579.0s
+|  |  1 x ParticleContainer.compute_interactions_verlet done in 681.0s
 |  |  memory used   : 358.9375 kB
-|  |  total cputime : 579.0 s
-|  |  cputime/iter  : 579.0 s
-|  |  interactions/s: 127.896373057
-|  experiment: nb=7, mem=64.3 kB, case=2: completed in 0.0369 s.
+|  |  total cputime : 681.0 s
+|  |  cputime/iter  : 681.0 s
+|  |  interactions/s: 108.740088106
+|  experiment: nb=7, mem=64.3 kB, case=2: completed in 0.0367 s.
 |  
 |  experiment: nb=8, mem=96 kB, case=2 ... 
 |  |      nb = 8
@@ -1161,20 +1161,20 @@ experiment.py ...
 |  |  nb*a/w = 3.77123616633
 |  |  build_verlet_list(atoms=2048, case=2) ... 
 |  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493 ... 
-|  |  |  |  ParticleContainer.build_verlet_list - spatial sort ... completed in 0.000248 s.
-|  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 0.000487 s.
+|  |  |  |  ParticleContainer.build_verlet_list - spatial sort ... completed in 0.000231 s.
+|  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 0.000525 s.
 |  |  |  |  ParticleContainer.build_verlet_list - building verlet list ... 
 |  |  |  |  |  (executing C++ version)
-|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 0.0187 s.
-|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 0.0195 s.
-|  |  build_verlet_list(atoms=2048, case=2): completed in 0.0195 s.
+|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 0.0186 s.
+|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 0.0194 s.
+|  |  build_verlet_list(atoms=2048, case=2): completed in 0.0194 s.
 |  |  ParticleContainer.compute_interactions - computing interactions ...
-|  |  1 x ParticleContainer.compute_interactions_verlet done in 1044.0s
+|  |  1 x ParticleContainer.compute_interactions_verlet done in 1165.0s
 |  |  memory used   : 566.2578125 kB
-|  |  total cputime : 1044.0 s
-|  |  cputime/iter  : 1044.0 s
-|  |  interactions/s: 113.350574713
-|  experiment: nb=8, mem=96 kB, case=2: completed in 0.0552 s.
+|  |  total cputime : 1165.0 s
+|  |  cputime/iter  : 1165.0 s
+|  |  interactions/s: 101.577682403
+|  experiment: nb=8, mem=96 kB, case=2: completed in 0.0548 s.
 |  
 |  experiment: nb=10, mem=188 kB, case=2 ... 
 |  |      nb = 10
@@ -1186,20 +1186,20 @@ experiment.py ...
 |  |  nb*a/w = 4.71404520791
 |  |  build_verlet_list(atoms=4000, case=2) ... 
 |  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493 ... 
-|  |  |  |  ParticleContainer.build_verlet_list - spatial sort ... completed in 0.000492 s.
-|  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 0.00126 s.
+|  |  |  |  ParticleContainer.build_verlet_list - spatial sort ... completed in 0.00043 s.
+|  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 0.00132 s.
 |  |  |  |  ParticleContainer.build_verlet_list - building verlet list ... 
 |  |  |  |  |  (executing C++ version)
-|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 0.0378 s.
-|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 0.0396 s.
-|  |  build_verlet_list(atoms=4000, case=2): completed in 0.0396 s.
+|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 0.0374 s.
+|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 0.0393 s.
+|  |  build_verlet_list(atoms=4000, case=2): completed in 0.0393 s.
 |  |  ParticleContainer.compute_interactions - computing interactions ...
-|  |  1 x ParticleContainer.compute_interactions_verlet done in 2011.0s
+|  |  1 x ParticleContainer.compute_interactions_verlet done in 2286.0s
 |  |  memory used   : 1160.7734375 kB
-|  |  total cputime : 2011.0 s
-|  |  cputime/iter  : 2011.0 s
-|  |  interactions/s: 121.908503232
-|  experiment: nb=10, mem=188 kB, case=2: completed in 0.109 s.
+|  |  total cputime : 2286.0 s
+|  |  cputime/iter  : 2286.0 s
+|  |  interactions/s: 107.243219598
+|  experiment: nb=10, mem=188 kB, case=2: completed in 0.108 s.
 |  
 |  experiment: nb=12, mem=324 kB, case=2 ... 
 |  |      nb = 12
@@ -1211,20 +1211,20 @@ experiment.py ...
 |  |  nb*a/w = 5.65685424949
 |  |  build_verlet_list(atoms=6912, case=2) ... 
 |  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493 ... 
-|  |  |  |  ParticleContainer.build_verlet_list - spatial sort ... completed in 0.000753 s.
-|  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 0.00198 s.
+|  |  |  |  ParticleContainer.build_verlet_list - spatial sort ... completed in 0.000796 s.
+|  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 0.00201 s.
 |  |  |  |  ParticleContainer.build_verlet_list - building verlet list ... 
 |  |  |  |  |  (executing C++ version)
-|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 0.0662 s.
-|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 0.069 s.
-|  |  build_verlet_list(atoms=6912, case=2): completed in 0.069 s.
+|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 0.0646 s.
+|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 0.0675 s.
+|  |  build_verlet_list(atoms=6912, case=2): completed in 0.0675 s.
 |  |  ParticleContainer.compute_interactions - computing interactions ...
-|  |  1 x ParticleContainer.compute_interactions_verlet done in 3830.0s
+|  |  1 x ParticleContainer.compute_interactions_verlet done in 4333.0s
 |  |  memory used   : 2100.09375 kB
-|  |  total cputime : 3830.0 s
-|  |  cputime/iter  : 3830.0 s
-|  |  interactions/s: 116.910704961
-|  experiment: nb=12, mem=324 kB, case=2: completed in 0.188 s.
+|  |  total cputime : 4333.0 s
+|  |  cputime/iter  : 4333.0 s
+|  |  interactions/s: 103.339026079
+|  experiment: nb=12, mem=324 kB, case=2: completed in 0.186 s.
 |  
 |  experiment: nb=15, mem=633 kB, case=2 ... 
 |  |      nb = 15
@@ -1236,20 +1236,20 @@ experiment.py ...
 |  |  nb*a/w = 7.07106781187
 |  |  build_verlet_list(atoms=13500, case=2) ... 
 |  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493 ... 
-|  |  |  |  ParticleContainer.build_verlet_list - spatial sort ... completed in 0.00155 s.
-|  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 0.00347 s.
+|  |  |  |  ParticleContainer.build_verlet_list - spatial sort ... completed in 0.00146 s.
+|  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 0.00353 s.
 |  |  |  |  ParticleContainer.build_verlet_list - building verlet list ... 
 |  |  |  |  |  (executing C++ version)
 |  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 0.128 s.
 |  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 0.133 s.
 |  |  build_verlet_list(atoms=13500, case=2): completed in 0.133 s.
 |  |  ParticleContainer.compute_interactions - computing interactions ...
-|  |  1 x ParticleContainer.compute_interactions_verlet done in 7312.0s
+|  |  1 x ParticleContainer.compute_interactions_verlet done in 8256.0s
 |  |  memory used   : 4159.4296875 kB
-|  |  total cputime : 7312.0 s
-|  |  cputime/iter  : 7312.0 s
-|  |  interactions/s: 121.623905908
-|  experiment: nb=15, mem=633 kB, case=2: completed in 0.366 s.
+|  |  total cputime : 8256.0 s
+|  |  cputime/iter  : 8256.0 s
+|  |  interactions/s: 107.717296512
+|  experiment: nb=15, mem=633 kB, case=2: completed in 0.365 s.
 |  
 |  experiment: nb=18, mem=1.09e+03 kB, case=2 ... 
 |  |      nb = 18
@@ -1261,20 +1261,20 @@ experiment.py ...
 |  |  nb*a/w = 8.48528137424
 |  |  build_verlet_list(atoms=23328, case=2) ... 
 |  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493 ... 
-|  |  |  |  ParticleContainer.build_verlet_list - spatial sort ... completed in 0.00264 s.
-|  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 0.00781 s.
+|  |  |  |  ParticleContainer.build_verlet_list - spatial sort ... completed in 0.0026 s.
+|  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 0.00811 s.
 |  |  |  |  ParticleContainer.build_verlet_list - building verlet list ... 
 |  |  |  |  |  (executing C++ version)
-|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 0.229 s.
-|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 0.239 s.
-|  |  build_verlet_list(atoms=23328, case=2): completed in 0.239 s.
+|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 0.226 s.
+|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 0.237 s.
+|  |  build_verlet_list(atoms=23328, case=2): completed in 0.237 s.
 |  |  ParticleContainer.compute_interactions - computing interactions ...
-|  |  1 x ParticleContainer.compute_interactions_verlet done in 13177.0s
+|  |  1 x ParticleContainer.compute_interactions_verlet done in 14840.0s
 |  |  memory used   : 7434.1796875 kB
-|  |  total cputime : 13177.0 s
-|  |  cputime/iter  : 13177.0 s
-|  |  interactions/s: 121.41504136
-|  experiment: nb=18, mem=1.09e+03 kB, case=2: completed in 0.642 s.
+|  |  total cputime : 14840.0 s
+|  |  cputime/iter  : 14840.0 s
+|  |  interactions/s: 107.80902965
+|  experiment: nb=18, mem=1.09e+03 kB, case=2: completed in 0.637 s.
 |  
 |  experiment: nb=22, mem=2e+03 kB, case=2 ... 
 |  |      nb = 22
@@ -1286,19 +1286,19 @@ experiment.py ...
 |  |  nb*a/w = 10.3708994574
 |  |  build_verlet_list(atoms=42592, case=2) ... 
 |  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493 ... 
-|  |  |  |  ParticleContainer.build_verlet_list - spatial sort ... completed in 0.00486 s.
-|  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 0.0124 s.
+|  |  |  |  ParticleContainer.build_verlet_list - spatial sort ... completed in 0.00474 s.
+|  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 0.0126 s.
 |  |  |  |  ParticleContainer.build_verlet_list - building verlet list ... 
 |  |  |  |  |  (executing C++ version)
-|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 0.419 s.
-|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 0.437 s.
-|  |  build_verlet_list(atoms=42592, case=2): completed in 0.437 s.
+|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 0.414 s.
+|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 0.432 s.
+|  |  build_verlet_list(atoms=42592, case=2): completed in 0.432 s.
 |  |  ParticleContainer.compute_interactions - computing interactions ...
-|  |  1 x ParticleContainer.compute_interactions_verlet done in 24678.0s
+|  |  1 x ParticleContainer.compute_interactions_verlet done in 27757.0s
 |  |  memory used   : 13892.234375 kB
-|  |  total cputime : 24678.0 s
-|  |  cputime/iter  : 24678.0 s
-|  |  interactions/s: 121.675824621
+|  |  total cputime : 27757.0 s
+|  |  cputime/iter  : 27757.0 s
+|  |  interactions/s: 108.178693663
 |  experiment: nb=22, mem=2e+03 kB, case=2: completed in 1.17 s.
 |  
 |  experiment: nb=27, mem=3.69e+03 kB, case=2 ... 
@@ -1311,20 +1311,20 @@ experiment.py ...
 |  |  nb*a/w = 12.7279220614
 |  |  build_verlet_list(atoms=78732, case=2) ... 
 |  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493 ... 
-|  |  |  |  ParticleContainer.build_verlet_list - spatial sort ... completed in 0.00888 s.
-|  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 0.0209 s.
+|  |  |  |  ParticleContainer.build_verlet_list - spatial sort ... completed in 0.00887 s.
+|  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 0.0211 s.
 |  |  |  |  ParticleContainer.build_verlet_list - building verlet list ... 
 |  |  |  |  |  (executing C++ version)
-|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 0.779 s.
-|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 0.809 s.
-|  |  build_verlet_list(atoms=78732, case=2): completed in 0.809 s.
+|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 0.765 s.
+|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 0.796 s.
+|  |  build_verlet_list(atoms=78732, case=2): completed in 0.796 s.
 |  |  ParticleContainer.compute_interactions - computing interactions ...
-|  |  1 x ParticleContainer.compute_interactions_verlet done in 45480.0s
+|  |  1 x ParticleContainer.compute_interactions_verlet done in 51269.0s
 |  |  memory used   : 25638.0546875 kB
-|  |  total cputime : 45480.0 s
-|  |  cputime/iter  : 45480.0 s
-|  |  interactions/s: 121.807959543
-|  experiment: nb=27, mem=3.69e+03 kB, case=2: completed in 2.17 s.
+|  |  total cputime : 51269.0 s
+|  |  cputime/iter  : 51269.0 s
+|  |  interactions/s: 108.05410677
+|  experiment: nb=27, mem=3.69e+03 kB, case=2: completed in 2.15 s.
 |  
 |  experiment: nb=34, mem=7.37e+03 kB, case=2 ... 
 |  |      nb = 34
@@ -1337,19 +1337,19 @@ experiment.py ...
 |  |  build_verlet_list(atoms=157216, case=2) ... 
 |  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493 ... 
 |  |  |  |  ParticleContainer.build_verlet_list - spatial sort ... completed in 0.0178 s.
-|  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 0.0391 s.
+|  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 0.0393 s.
 |  |  |  |  ParticleContainer.build_verlet_list - building verlet list ... 
 |  |  |  |  |  (executing C++ version)
-|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 1.56 s.
-|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 1.62 s.
-|  |  build_verlet_list(atoms=157216, case=2): completed in 1.62 s.
+|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 1.54 s.
+|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 1.6 s.
+|  |  build_verlet_list(atoms=157216, case=2): completed in 1.6 s.
 |  |  ParticleContainer.compute_interactions - computing interactions ...
-|  |  1 x ParticleContainer.compute_interactions_verlet done in 94804.0s
+|  |  1 x ParticleContainer.compute_interactions_verlet done in 106189.0s
 |  |  memory used   : 52707.203125 kB
-|  |  total cputime : 94804.0 s
-|  |  cputime/iter  : 94804.0 s
-|  |  interactions/s: 120.767435973
-|  experiment: nb=34, mem=7.37e+03 kB, case=2: completed in 4.36 s.
+|  |  total cputime : 106189.0 s
+|  |  cputime/iter  : 106189.0 s
+|  |  interactions/s: 107.819416324
+|  experiment: nb=34, mem=7.37e+03 kB, case=2: completed in 4.32 s.
 |  
 |  experiment: nb=42, mem=1.39e+04 kB, case=2 ... 
 |  |      nb = 42
@@ -1362,19 +1362,19 @@ experiment.py ...
 |  |  build_verlet_list(atoms=296352, case=2) ... 
 |  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493 ... 
 |  |  |  |  ParticleContainer.build_verlet_list - spatial sort ... completed in 0.0334 s.
-|  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 0.0882 s.
+|  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 0.0903 s.
 |  |  |  |  ParticleContainer.build_verlet_list - building verlet list ... 
 |  |  |  |  |  (executing C++ version)
-|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 3 s.
-|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 3.12 s.
-|  |  build_verlet_list(atoms=296352, case=2): completed in 3.12 s.
+|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 2.95 s.
+|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 3.07 s.
+|  |  build_verlet_list(atoms=296352, case=2): completed in 3.07 s.
 |  |  ParticleContainer.compute_interactions - computing interactions ...
-|  |  1 x ParticleContainer.compute_interactions_verlet done in 178435.0s
+|  |  1 x ParticleContainer.compute_interactions_verlet done in 200671.0s
 |  |  memory used   : 99715.1484375 kB
-|  |  total cputime : 178435.0 s
-|  |  cputime/iter  : 178435.0 s
-|  |  interactions/s: 121.470014291
-|  experiment: nb=42, mem=1.39e+04 kB, case=2: completed in 8.3 s.
+|  |  total cputime : 200671.0 s
+|  |  cputime/iter  : 200671.0 s
+|  |  interactions/s: 108.010135994
+|  experiment: nb=42, mem=1.39e+04 kB, case=2: completed in 8.24 s.
 |  
 |  experiment: nb=52, mem=2.64e+04 kB, case=2 ... 
 |  |      nb = 52
@@ -1387,19 +1387,19 @@ experiment.py ...
 |  |  build_verlet_list(atoms=562432, case=2) ... 
 |  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493 ... 
 |  |  |  |  ParticleContainer.build_verlet_list - spatial sort ... completed in 0.0665 s.
-|  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 0.151 s.
+|  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 0.153 s.
 |  |  |  |  ParticleContainer.build_verlet_list - building verlet list ... 
 |  |  |  |  |  (executing C++ version)
-|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 5.69 s.
-|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 5.91 s.
-|  |  build_verlet_list(atoms=562432, case=2): completed in 5.91 s.
+|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 5.62 s.
+|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 5.84 s.
+|  |  build_verlet_list(atoms=562432, case=2): completed in 5.84 s.
 |  |  ParticleContainer.compute_interactions - computing interactions ...
-|  |  1 x ParticleContainer.compute_interactions_verlet done in 346866.0s
+|  |  1 x ParticleContainer.compute_interactions_verlet done in 389897.0s
 |  |  memory used   : 192309.507812 kB
-|  |  total cputime : 346866.0 s
-|  |  cputime/iter  : 346866.0 s
-|  |  interactions/s: 120.852484821
-|  experiment: nb=52, mem=2.64e+04 kB, case=2: completed in 15.8 s.
+|  |  total cputime : 389897.0 s
+|  |  cputime/iter  : 389897.0 s
+|  |  interactions/s: 107.51459488
+|  experiment: nb=52, mem=2.64e+04 kB, case=2: completed in 15.7 s.
 |  
 |  experiment: nb=65, mem=5.15e+04 kB, case=2 ... 
 |  |      nb = 65
@@ -1411,20 +1411,20 @@ experiment.py ...
 |  |  nb*a/w = 30.6412938514
 |  |  build_verlet_list(atoms=1098500, case=2) ... 
 |  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493 ... 
-|  |  |  |  ParticleContainer.build_verlet_list - spatial sort ... completed in 0.133 s.
-|  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 0.276 s.
+|  |  |  |  ParticleContainer.build_verlet_list - spatial sort ... completed in 0.135 s.
+|  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 0.278 s.
 |  |  |  |  ParticleContainer.build_verlet_list - building verlet list ... 
 |  |  |  |  |  (executing C++ version)
-|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 11.1 s.
-|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 11.5 s.
-|  |  build_verlet_list(atoms=1098500, case=2): completed in 11.5 s.
+|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 11 s.
+|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 11.4 s.
+|  |  build_verlet_list(atoms=1098500, case=2): completed in 11.4 s.
 |  |  ParticleContainer.compute_interactions - computing interactions ...
-|  |  1 x ParticleContainer.compute_interactions_verlet done in 692688.0s
+|  |  1 x ParticleContainer.compute_interactions_verlet done in 777389.0s
 |  |  memory used   : 380205.109375 kB
-|  |  total cputime : 692688.0 s
-|  |  cputime/iter  : 692688.0 s
-|  |  interactions/s: 119.898147507
-|  experiment: nb=65, mem=5.15e+04 kB, case=2: completed in 30.8 s.
+|  |  total cputime : 777389.0 s
+|  |  cputime/iter  : 777389.0 s
+|  |  interactions/s: 106.834555158
+|  experiment: nb=65, mem=5.15e+04 kB, case=2: completed in 30.5 s.
 |  
 |  experiment: nb=81, mem=9.96e+04 kB, case=2 ... 
 |  |      nb = 81
@@ -1436,20 +1436,20 @@ experiment.py ...
 |  |  nb*a/w = 38.1837661841
 |  |  build_verlet_list(atoms=2125764, case=2) ... 
 |  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493 ... 
-|  |  |  |  ParticleContainer.build_verlet_list - spatial sort ... completed in 0.275 s.
-|  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 0.648 s.
+|  |  |  |  ParticleContainer.build_verlet_list - spatial sort ... completed in 0.276 s.
+|  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 0.664 s.
 |  |  |  |  ParticleContainer.build_verlet_list - building verlet list ... 
 |  |  |  |  |  (executing C++ version)
-|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 21.9 s.
-|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 22.8 s.
-|  |  build_verlet_list(atoms=2125764, case=2): completed in 22.8 s.
+|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 21.5 s.
+|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 22.5 s.
+|  |  build_verlet_list(atoms=2125764, case=2): completed in 22.5 s.
 |  |  ParticleContainer.compute_interactions - computing interactions ...
-|  |  1 x ParticleContainer.compute_interactions_verlet done in 1338803.0s
+|  |  1 x ParticleContainer.compute_interactions_verlet done in 1504563.0s
 |  |  memory used   : 740121.328125 kB
-|  |  total cputime : 1338803.0 s
-|  |  cputime/iter  : 1338803.0 s
-|  |  interactions/s: 120.881211052
-|  experiment: nb=81, mem=9.96e+04 kB, case=2: completed in 60.1 s.
+|  |  total cputime : 1504563.0 s
+|  |  cputime/iter  : 1504563.0 s
+|  |  interactions/s: 107.5635437
+|  experiment: nb=81, mem=9.96e+04 kB, case=2: completed in 59.5 s.
 |  
 |  experiment: nb=102, mem=1.99e+05 kB, case=2 ... 
 |  |      nb = 102
@@ -1461,20 +1461,20 @@ experiment.py ...
 |  |  nb*a/w = 48.0832611207
 |  |  build_verlet_list(atoms=4244832, case=2) ... 
 |  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493 ... 
-|  |  |  |  ParticleContainer.build_verlet_list - spatial sort ... completed in 0.581 s.
-|  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 1.15 s.
+|  |  |  |  ParticleContainer.build_verlet_list - spatial sort ... completed in 0.582 s.
+|  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 1.16 s.
 |  |  |  |  ParticleContainer.build_verlet_list - building verlet list ... 
 |  |  |  |  |  (executing C++ version)
-|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 43.7 s.
-|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 45.4 s.
-|  |  build_verlet_list(atoms=4244832, case=2): completed in 45.4 s.
+|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 42.8 s.
+|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 44.6 s.
+|  |  build_verlet_list(atoms=4244832, case=2): completed in 44.6 s.
 |  |  ParticleContainer.compute_interactions - computing interactions ...
-|  |  1 x ParticleContainer.compute_interactions_verlet done in 2730788.0s
+|  |  1 x ParticleContainer.compute_interactions_verlet done in 3036274.0s
 |  |  memory used   : 1490122.13281 kB
-|  |  total cputime : 2730788.0 s
-|  |  cputime/iter  : 2730788.0 s
-|  |  interactions/s: 119.485090018
-|  experiment: nb=102, mem=1.99e+05 kB, case=2: completed in 120 s.
+|  |  total cputime : 3036274.0 s
+|  |  cputime/iter  : 3036274.0 s
+|  |  interactions/s: 107.463440388
+|  experiment: nb=102, mem=1.99e+05 kB, case=2: completed in 119 s.
 |  
 |  experiment: nb=128, mem=3.93e+05 kB, case=2 ... 
 |  |      nb = 128
@@ -1487,19 +1487,19 @@ experiment.py ...
 |  |  build_verlet_list(atoms=8388608, case=2) ... 
 |  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493 ... 
 |  |  |  |  ParticleContainer.build_verlet_list - spatial sort ... completed in 1.18 s.
-|  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 2.12 s.
+|  |  |  |  ParticleContainer.build_verlet_list - building hilbert list ... completed in 2.13 s.
 |  |  |  |  ParticleContainer.build_verlet_list - building verlet list ... 
 |  |  |  |  |  (executing C++ version)
-|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 85.5 s.
-|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 88.8 s.
-|  |  build_verlet_list(atoms=8388608, case=2): completed in 88.8 s.
+|  |  |  |  ParticleContainer.build_verlet_list - building verlet list: completed in 84.1 s.
+|  |  |  ParticleContainer.build_verlet_list_hilbert: w=3.36738614493, rc=3.36738614493: completed in 87.4 s.
+|  |  build_verlet_list(atoms=8388608, case=2): completed in 87.4 s.
 |  |  ParticleContainer.compute_interactions - computing interactions ...
-|  |  1 x ParticleContainer.compute_interactions_verlet done in 6320821.0s
+|  |  1 x ParticleContainer.compute_interactions_verlet done in 6913130.0s
 |  |  memory used   : 2962871.53906 kB
-|  |  total cputime : 6320821.0 s
-|  |  cputime/iter  : 6320821.0 s
-|  |  interactions/s: 102.746654272
-|  experiment: nb=128, mem=3.93e+05 kB, case=2: completed in 237 s.
+|  |  total cputime : 6913130.0 s
+|  |  cputime/iter  : 6913130.0 s
+|  |  interactions/s: 93.9434395129
+|  experiment: nb=128, mem=3.93e+05 kB, case=2: completed in 234 s.
 |  
-experiment.py: completed in 1.58e+03 s.
+experiment.py: completed in 1.57e+03 s.
 
